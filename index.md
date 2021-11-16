@@ -25,7 +25,7 @@
 ## Links
 
 - [Online Demo](http://120.78.207.151/dist/)
-- [Online Docs](https://stefan-ysh.github.io/mobile_tree_guide/)
+- [Online Docs](https://stefan-ysh.github.io/mobile_org_tree_git/)
 - [Download](https://stefan-ysh.github.io/mobile_tree_guide/components/MobileTree.vue)
 
 ## Tree Props
