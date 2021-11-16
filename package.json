@@ -1,0 +1,35 @@
+{
+  "name": "mobile_org_tree",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vue-cli-service serve",
+    "dev-qa": "vue-cli-service serve --mode qa",
+    "dev-stage": "vue-cli-service serve --mode stage",
+    "dev-product": "vue-cli-service serve --mode production",
+    "build": "vue-cli-service build",
+    "build-qa": "vue-cli-service build --mode qa",
+    "build-stage": "vue-cli-service build --mode stage",
+    "build-product": "vue-cli-service build --mode production"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "core-js": "^3.6.5",
+    "vue": "^2.6.11",
+    "vue-directive-touch": "^1.0.28",
+    "webpack-cli": "^4.9.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.4.0",
+    "@vue/cli-plugin-eslint": "~4.4.0",
+    "@vue/cli-service": "~4.4.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-vue": "^6.2.2",
+    "prettier": "^1.19.1",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.46.0"
+  }
+}
