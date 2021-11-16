@@ -13,20 +13,20 @@
 ## Modules
 
 <div align="center">
-<img src="https://stefan-ysh.github.io/mobile_tree_guide/images/modules.jpg" />
+<img src="https://stefan-ysh.github.io/images/modules.jpg" />
 </div>
 
 ## Instructions
 
 <div align="center">
-<img src="https://stefan-ysh.github.io/mobile_tree_guide/images/instructions.jpg" />
+<img src="https://stefan-ysh.github.io/images/instructions.jpg" />
 </div>
 
 ## Links
 
 - [Online Demo](http://120.78.207.151/dist/)
-- [Online Docs](https://stefan-ysh.github.io/mobile_tree_guide/)
-- [Download](https://stefan-ysh.github.io/mobile_tree_guide/components/MobileTree.vue)
+- [Online Docs](https://stefan-ysh.github.io/mobile_org_tree_git/)
+- [Download](https://stefan-ysh.github.io/components/MobileTree.vue)
 
 ## Tree Props
 
