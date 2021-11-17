@@ -126,7 +126,7 @@
     └── vue.config.js
    ```
 
-2. 在 `index.js` 用到该组件处引入：
+2. 在 `index.js` 中写入如下代码：
 
    ```javascript
    import MobileTreeCpt from "./MobileTree.vue";
@@ -140,13 +140,15 @@
    export default MobileTree;
    ```
 
-3. 在 `main.js` 中注册：
+3. 在 `main.js` 中进行全局注册：
 
    ```js
    import MobileTree from "./components/MobileTree";
 
    Vue.use(MobileTree);
    ```
+
+4. 注册后即可在全局任意位置使用
 
 ### 启用组件
 
