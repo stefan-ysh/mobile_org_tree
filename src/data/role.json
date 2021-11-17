@@ -1,0 +1,197 @@
+[
+  {
+    "name": "党员",
+    "id": "party_member",
+    "avatar": "https://stefan-ysh.github.io/images/role-icon/party-flag.png",
+    "children": [
+      {
+        "name": "党龄5年以内",
+        "id": "party_standing_lt_5",
+        "avatar": "https://stefan-ysh.github.io/images/role-icon/party-flag.png",
+        "children": [
+          {
+            "id": "Xiaolong Chen",
+            "avatar": "https://img0.baidu.com/it/u=941922585,1655927877&fm=26&fmt=auto",
+            "name": "陈小龙",
+            "type": "user"
+          },
+          {
+            "id": "Yusen Xing",
+            "name": "邢育森",
+            "avatar": "https://img1.baidu.com/it/u=3776217302,416005728&fm=26&fmt=auto",
+            "type": "user"
+          },
+          {
+            "id": "Limei Wu",
+            "name": "吴立梅",
+            "avatar": "https://img0.baidu.com/it/u=779592464,1722509117&fm=26&fmt=auto",
+            "type": "user"
+          }
+        ]
+      },
+      {
+        "name": "党龄5-10年",
+        "id": "5_gt_party_standing_lt_10",
+        "avatar": "https://stefan-ysh.github.io/images/role-icon/party-flag.png",
+        "children": [
+          {
+            "id": "Haisheng Zhang",
+            "avatar": "https://img0.baidu.com/it/u=944623136,2452636283&fm=26&fmt=auto",
+            "name": "张海生",
+            "type": "user"
+          },
+          {
+            "id": "Guiqiu Wang",
+            "name": "王桂秋",
+            "avatar": "https://img1.baidu.com/it/u=3545499816,4261276936&fm=26&fmt=auto",
+            "type": "user"
+          }
+        ]
+      },
+      {
+        "name": "党龄10年以上",
+        "avatar": "https://stefan-ysh.github.io/images/role-icon/party-flag.png",
+        "id": "party_standing_gt_10",
+        "children": [
+          {
+            "id": "Yang Wang",
+            "name": "汪洋",
+            "avatar": "https://img1.baidu.com/it/u=2475963732,764692138&fm=26&fmt=auto",
+            "type": "user"
+          },
+          {
+            "id": "Zihao Zhao",
+            "name": "赵子豪",
+            "avatar": "https://img0.baidu.com/it/u=1790150141,4008312263&fm=26&fmt=auto",
+            "type": "user"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "管理员",
+    "id": "admin",
+    "avatar": "https://stefan-ysh.github.io/images/role-icon/admin.png",
+    "children": [
+      {
+        "name": "初级管理员",
+        "id": "junior_admin",
+        "avatar": "https://stefan-ysh.github.io/images/role-icon/admin.png",
+        "children": [
+          {
+            "id": "Lili Chen",
+            "avatar": "https://img0.baidu.com/it/u=184640551,1698400174&fm=26&fmt=auto",
+            "name": "陈丽丽",
+            "type": "user"
+          },
+          {
+            "id": "Limei Wu",
+            "name": "吴立梅",
+            "avatar": "https://img0.baidu.com/it/u=779592464,1722509117&fm=26&fmt=auto",
+            "type": "user"
+          }
+        ]
+      },
+      {
+        "name": "中级管理员",
+        "avatar": "https://stefan-ysh.github.io/images/role-icon/admin.png",
+        "id": "middle_level_admin",
+        "children": [
+          {
+            "id": "Zihao Zhao",
+            "name": "赵子豪",
+            "avatar": "https://img0.baidu.com/it/u=1790150141,4008312263&fm=26&fmt=auto",
+            "type": "user"
+          },
+          {
+            "id": "Wang Liu",
+            "name": "刘旺",
+            "avatar": "https://img1.baidu.com/it/u=3866883146,595779627&fm=26&fmt=auto",
+            "type": "user"
+          },
+          {
+            "id": "Haisheng Zhang",
+            "avatar": "https://img0.baidu.com/it/u=944623136,2452636283&fm=26&fmt=auto",
+            "name": "张海生",
+            "type": "user"
+          }
+        ]
+      },
+      {
+        "name": "高级管理员",
+        "id": "senior_admin",
+        "avatar": "https://stefan-ysh.github.io/images/role-icon/admin.png",
+        "children": [
+          {
+            "id": "Hao Qian",
+            "avatar": "https://img1.baidu.com/it/u=4044273981,2319806887&fm=26&fmt=auto",
+            "name": "钱浩",
+            "type": "user"
+          },
+          {
+            "id": "Feng Zhao",
+            "name": "赵峰",
+            "avatar": "https://img0.baidu.com/it/u=2523681781,1676592333&fm=26&fmt=auto",
+            "type": "user"
+          },
+          {
+            "id": "Chuang Wang",
+            "avatar": "https://img2.baidu.com/it/u=2458219545,2167153187&fm=26&fmt=auto",
+            "name": "王闯",
+            "type": "user"
+          },
+          {
+            "id": "Da Guo",
+            "name": "郭达",
+            "type": "user",
+            "avatar": "https://img0.baidu.com/it/u=2580507229,1328036641&fm=26&fmt=auto"
+          }
+        ]
+      },
+      {
+        "name": "赵金生",
+        "id": "zhaojinsheng",
+        "avatar": ""
+      }
+    ]
+  },
+  {
+    "name": "实习生",
+    "id": "intern",
+    "avatar": "https://stefan-ysh.github.io/images/role-icon/intern.png",
+    "children": [
+      {
+        "id": "Liang Wang",
+        "avatar": "https://img1.baidu.com/it/u=2050142671,230198935&fm=26&fmt=auto",
+        "name": "王亮",
+        "type": "user"
+      },
+      {
+        "id": "Lili Shen",
+        "name": "沈丽丽",
+        "avatar": "https://img0.baidu.com/it/u=1802237337,312363691&fm=26&fmt=auto",
+        "type": "user"
+      }
+    ]
+  },
+  {
+    "name": "工程师",
+    "id": "senior_engineer",
+    "avatar": "https://stefan-ysh.github.io/images/role-icon/engineer.png",
+    "children": [
+      {
+        "id": "Dali Liu",
+        "name": "刘大力",
+        "avatar": "https://img0.baidu.com/it/u=659051551,564152843&fm=26&fmt=auto",
+        "type": "user"
+      },
+      {
+        "id": "Yuxuan Zhao",
+        "avatar": "https://img0.baidu.com/it/u=503169862,1089219736&fm=26&fmt=auto",
+        "name": "赵宇轩",
+        "type": "user"
+      }
+    ]
+  }
+]

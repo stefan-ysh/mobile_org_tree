@@ -1,0 +1,369 @@
+[
+  {
+    "id": "HR",
+    "name": "人事部",
+    "type": "org",
+    "avatar": "https://stefan-ysh.github.io/images/role-icon/HR.png",
+    "children": [
+      {
+        "id": "Hai Zhang",
+        "name": "张海",
+        "type": "user",
+        "avatar": "https://img2.baidu.com/it/u=635960763,508253368&fm=26&fmt=auto"
+      },
+      {
+        "id": "Qiang Wang",
+        "name": "王强",
+        "avatar": "https://img2.baidu.com/it/u=2557173355,182667230&fm=26&fmt=auto",
+        "type": "user"
+      },
+      {
+        "id": "RecruitmentDept",
+        "name": "招聘组",
+        "avatar": "https://stefan-ysh.github.io/images/role-icon/Recruitment.png",
+        "type": "org",
+        "children": [
+          {
+            "id": "Shumei Xing",
+            "avatar": "https://img1.baidu.com/it/u=2927425576,2938784586&fm=26&fmt=auto",
+            "name": "邢淑梅",
+            "type": "user"
+          }
+        ]
+      },
+      {
+        "id": "Trainning",
+        "name": "培训组",
+        "avatar": "https://stefan-ysh.github.io/images/role-icon/training.png",
+        "type": "org",
+        "children": [
+          {
+            "id": "Changsheng Zhao",
+            "name": "赵长胜",
+            "avatar": "https://img1.baidu.com/it/u=2635269784,4058778617&fm=26&fmt=auto",
+            "type": "user"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "Finance",
+    "name": "财务部",
+    "avatar": "https://stefan-ysh.github.io/images/role-icon/fiance.png",
+    "type": "org",
+    "children": [
+      {
+        "id": "Xiaoshan Liang",
+        "avatar": "https://img0.baidu.com/it/u=266801629,3353657338&fm=26&fmt=auto",
+        "name": "梁晓珊",
+        "type": "user"
+      },
+      {
+        "id": "Keju Zhao",
+        "name": "赵科举",
+        "avatar": "https://img1.baidu.com/it/u=1069162776,4195636794&fm=26&fmt=auto",
+        "type": "user"
+      },
+      {
+        "id": "Weijia Yin",
+        "avatar": "https://img2.baidu.com/it/u=3378504009,4090267643&fm=26&fmt=auto",
+        "name": "尹维嘉",
+        "type": "user"
+      }
+    ]
+  },
+  {
+    "id": "R&D",
+    "name": "研发部",
+    "type": "org",
+    "avatar": "https://stefan-ysh.github.io/images/role-icon/RD.png",
+    "children": [
+      {
+        "id": "Shihan Liu",
+        "name": "刘诗函",
+        "type": "user",
+        "avatar": "https://img2.baidu.com/it/u=692741107,802595598&fm=26&fmt=auto"
+      },
+      {
+        "id": "Yutian Zhao",
+        "name": "赵玉田",
+        "avatar": "https://img0.baidu.com/it/u=1654161566,76710848&fm=26&fmt=auto",
+        "type": "user"
+      },
+      {
+        "id": "Frontend",
+        "name": "前端组",
+        "avatar": "https://stefan-ysh.github.io/images/role-icon/frontend.png",
+        "type": "org",
+        "children": [
+          {
+            "id": "Chuang Wang",
+            "avatar": "https://img2.baidu.com/it/u=2458219545,2167153187&fm=26&fmt=auto",
+            "name": "王闯",
+            "type": "user"
+          },
+          {
+            "id": "Da Guo",
+            "name": "郭达",
+            "type": "user",
+            "avatar": "https://img0.baidu.com/it/u=2580507229,1328036641&fm=26&fmt=auto"
+          },
+          {
+            "id": "Xiaoyue Zheng",
+            "avatar": "https://img2.baidu.com/it/u=1051136004,1391270019&fm=26&fmt=auto",
+            "name": "郑晓月",
+            "type": "user"
+          },
+          {
+            "id": "Yihan Wang",
+            "name": "王一涵",
+            "type": "user",
+            "avatar": "https://img0.baidu.com/it/u=2327156912,212673298&fm=26&fmt=auto"
+          },
+          {
+            "id": "Xiaoshuai Zhao",
+            "avatar": "https://img0.baidu.com/it/u=1811316539,1630442304&fm=26&fmt=auto",
+            "name": "赵小帅",
+            "type": "user"
+          }
+        ]
+      },
+      {
+        "id": "Backend",
+        "avatar": "https://stefan-ysh.github.io/images/role-icon/backend.png",
+        "name": "后端组",
+        "type": "org",
+        "children": [
+          {
+            "id": "Dali Liu",
+            "name": "刘大力",
+            "avatar": "https://img0.baidu.com/it/u=659051551,564152843&fm=26&fmt=auto",
+            "type": "user"
+          },
+          {
+            "id": "Yuxuan Zhao",
+            "avatar": "https://img0.baidu.com/it/u=503169862,1089219736&fm=26&fmt=auto",
+            "name": "赵宇轩",
+            "type": "user"
+          },
+          {
+            "id": "Shuxia Sun",
+            "avatar": "https://img2.baidu.com/it/u=2814614171,2626747615&fm=26&fmt=auto",
+            "name": "孙淑霞",
+            "type": "user"
+          },
+          {
+            "id": "Cheng Chen",
+            "avatar": "https://img0.baidu.com/it/u=2523681781,1676592333&fm=26&fmt=auto",
+            "name": "陈成",
+            "type": "user"
+          },
+          {
+            "id": "Baode Wei",
+            "avatar": "https://img1.baidu.com/it/u=1521588813,902569731&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500",
+            "name": "魏宝德",
+            "type": "user"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "market",
+    "name": "市场部",
+    "avatar": "https://stefan-ysh.github.io/images/role-icon/market.png",
+    "type": "org",
+    "children": [
+      {
+        "id": "NewMediaOperation",
+        "name": "新媒体运营组",
+        "avatar": "https://stefan-ysh.github.io/images/role-icon/operation.png",
+        "type": "org",
+        "children": [
+          {
+            "id": "Qian Sun",
+            "avatar": "https://img2.baidu.com/it/u=188531234,2810663423&fm=26&fmt=auto",
+            "name": "孙倩",
+            "type": "user"
+          },
+          {
+            "id": "Baocai Wang",
+            "name": "王宝才",
+            "avatar": "https://img1.baidu.com/it/u=3135426810,225617880&fm=26&fmt=auto",
+            "type": "user"
+          },
+          {
+            "id": "Lei Shi",
+            "name": "石磊",
+            "avatar": "https://img2.baidu.com/it/u=358887262,4006530834&fm=26&fmt=auto",
+            "type": "user"
+          }
+        ]
+      },
+      {
+        "id": "CityDocing",
+        "name": "城市对接组",
+        "avatar": "https://stefan-ysh.github.io/images/role-icon/city.png",
+        "type": "org",
+        "children": [
+          {
+            "id": "Liang Wang",
+            "avatar": "https://img1.baidu.com/it/u=2050142671,230198935&fm=26&fmt=auto",
+            "name": "王亮",
+            "type": "user"
+          },
+          {
+            "id": "Lili Shen",
+            "name": "沈丽丽",
+            "avatar": "https://img0.baidu.com/it/u=1802237337,312363691&fm=26&fmt=auto",
+            "type": "user"
+          },
+          {
+            "id": "Chunlai Zhao",
+            "name": "赵春来",
+            "avatar": "https://img2.baidu.com/it/u=1568214555,3079944916&fm=26&fmt=auto",
+            "type": "user"
+          },
+          {
+            "id": "Zihan Wang",
+            "name": "王子涵",
+            "avatar": "https://img0.baidu.com/it/u=2621087193,1676266182&fm=26&fmt=auto",
+            "type": "user"
+          }
+        ]
+      },
+      {
+        "id": "Planning",
+        "name": "策划组",
+        "avatar": "https://stefan-ysh.github.io/images/role-icon/planning.png",
+        "type": "org",
+        "children": [
+          {
+            "id": "Guiping Chen",
+            "avatar": "https://img0.baidu.com/it/u=1533327905,3907509554&fm=26&fmt=auto",
+            "name": "陈桂平",
+            "type": "user"
+          },
+          {
+            "id": "Yishui Liu",
+            "avatar": "https://img0.baidu.com/it/u=2635728010,4210861468&fm=253&fmt=auto&app=138&f=JPEG?w=503&h=500",
+            "name": "刘一水",
+            "type": "user"
+          },
+          {
+            "id": "Mei Zhao",
+            "name": "赵梅",
+            "avatar": "https://img2.baidu.com/it/u=2362853125,80377635&fm=26&fmt=auto",
+            "type": "user"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "Design",
+    "name": "设计部",
+    "avatar": "https://stefan-ysh.github.io/images/role-icon/design.png",
+    "type": "org",
+    "children": [
+      {
+        "id": "OriginalPainting",
+        "avatar": "https://stefan-ysh.github.io/images/role-icon/oribinal_painting.png",
+        "name": "原画组",
+        "type": "org",
+        "children": [
+          {
+            "id": "Yang Wang",
+            "name": "汪洋",
+            "avatar": "https://img1.baidu.com/it/u=2475963732,764692138&fm=26&fmt=auto",
+            "type": "user"
+          },
+          {
+            "id": "Zihao Zhao",
+            "name": "赵子豪",
+            "avatar": "https://img0.baidu.com/it/u=1790150141,4008312263&fm=26&fmt=auto",
+            "type": "user"
+          },
+          { "id": "Wang Liu", "name": "刘旺", "avatar": "https://img1.baidu.com/it/u=3866883146,595779627&fm=26&fmt=auto", "type": "user" },
+          {
+            "id": "Haisheng Zhang",
+            "avatar": "https://img0.baidu.com/it/u=944623136,2452636283&fm=26&fmt=auto",
+            "name": "张海生",
+            "type": "user"
+          },
+          {
+            "id": "Guiqiu Wang",
+            "name": "王桂秋",
+            "avatar": "https://img1.baidu.com/it/u=3545499816,4261276936&fm=26&fmt=auto",
+            "type": "user"
+          },
+          {
+            "id": "Lili Chen",
+            "avatar": "https://img0.baidu.com/it/u=184640551,1698400174&fm=26&fmt=auto",
+            "name": "陈丽丽",
+            "type": "user"
+          },
+          {
+            "id": "Limei Wu",
+            "name": "吴立梅",
+            "avatar": "https://img0.baidu.com/it/u=779592464,1722509117&fm=26&fmt=auto",
+            "type": "user"
+          }
+        ]
+      },
+      {
+        "id": "5.2",
+        "type": "org",
+        "avatar": "https://stefan-ysh.github.io/images/role-icon/CG.png",
+        "name": "特效组",
+        "children": [
+          { "id": "Hao Qian", "avatar": "https://img1.baidu.com/it/u=4044273981,2319806887&fm=26&fmt=auto", "name": "钱浩", "type": "user" },
+          {
+            "id": "Feng Zhao",
+            "name": "赵峰",
+            "avatar": "https://img0.baidu.com/it/u=2523681781,1676592333&fm=26&fmt=auto",
+            "type": "user"
+          },
+          { "id": "Yang Liu", "avatar": "https://img1.baidu.com/it/u=3545499816,4261276936&fm=26&fmt=auto", "name": "刘洋", "type": "user" },
+          {
+            "id": "Yusen Xing",
+            "name": "邢育森",
+            "avatar": "https://img1.baidu.com/it/u=3776217302,416005728&fm=26&fmt=auto",
+            "type": "user"
+          },
+          { "id": "Qiu Yan", "avatar": "https://img2.baidu.com/it/u=241311204,1760699530&fm=26&fmt=auto", "name": "燕秋", "type": "user" }
+        ]
+      },
+      {
+        "id": "Action",
+        "name": "动作组",
+        "avatar": "https://stefan-ysh.github.io/images/role-icon/action.png",
+        "type": "org",
+        "children": [
+          {
+            "id": "Xiaolong Chen",
+            "avatar": "https://img0.baidu.com/it/u=941922585,1655927877&fm=26&fmt=auto",
+            "name": "陈小龙",
+            "type": "user"
+          },
+          {
+            "id": "Daqiang Zhou",
+            "avatar": "https://img0.baidu.com/it/u=3203343077,3282404334&fm=26&fmt=auto",
+            "name": "周大强",
+            "type": "user"
+          },
+          { "id": "Wei Wu", "avatar": "https://img1.baidu.com/it/u=1041667606,3755162272&fm=26&fmt=auto", "name": "吴伟", "type": "user" },
+          { "id": "Song Chen", "avatar": "https://img0.baidu.com/it/u=2230931469,319262862&fm=26&fmt=auto", "name": "陈松", "type": "user" }
+        ]
+      },
+      { "id": "Hai Sun", "avatar": "https://img0.baidu.com/it/u=1124563456,1129104502&fm=26&fmt=auto", "name": "孙海", "type": "user" }
+    ]
+  },
+  {
+    "id": "Lizhi Zhang",
+    "avatar": "https://img1.baidu.com/it/u=3788219765,3547042341&fm=26&fmt=auto",
+    "name": "张立志",
+    "type": "user"
+  }
+]
