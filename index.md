@@ -39,7 +39,7 @@
 | icon              | String  | 一       | avatar   | 头像的字段名称                                                                 |
 | isShowClearBtn    | Boolean | 一       | true     | 是否显示搜索框右侧的清除按钮                                                   |
 | isShowIcon        | Boolean | 一       | false    | 是否显示图标                                                                   |
-| defaultIcon       | String  | 一       | 一       | 默认图标，本地图片引用方式：`:defaultIcon="require('@/assets/demo/icon.jpg')"` |
+| defaultIcon       | String  | 一       | 一       | 默认图标，引用本地图片：`:defaultIcon="require('@/assets/demo/icon.jpg')"` |
 | isMultiple        | Boolean | 一       | true     | 是否多选                                                                       |
 | isSelectRequired  | Boolean | 一       | true     | 是否必选                                                                       |
 | selectedList      | Array   | 一       | []       | 已经选择的数据，可用作回显                                                     |
