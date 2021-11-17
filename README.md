@@ -30,26 +30,26 @@
 
 ## Tree Props
 
-| prop              | type    | options  | default  | description                                                                    |
-| :---------------- | :------ | :------- | :------- | :----------------------------------------------------------------------------- |
-| data              | Array   | 一       | []       | 渲染数据源                                                                     |
-| label             | String  | 一       | name     | 展示字段名称                                                                   |
-| nodeKey           | String  | 一       | id       | 数据 key(如: id)                                                               |
-| children          | String  | 一       | children | 子节点的字段名称                                                               |
-| icon              | String  | 一       | avatar   | 头像的字段名称                                                                 |
-| isShowClearBtn    | Boolean | 一       | true     | 是否显示搜索框右侧的清除按钮                                                   |
-| isShowIcon        | Boolean | 一       | false    | 是否显示图标                                                                   |
-| defaultIcon       | String  | 一       | 一       | 默认图标，引用本地图片：`:defaultIcon="require('@/assets/demo/icon.jpg')"` |
-| isMultiple        | Boolean | 一       | true     | 是否多选                                                                       |
-| isSelectRequired  | Boolean | 一       | true     | 是否必选                                                                       |
-| selectedList      | Array   | 一       | []       | 已经选择的数据，可用作回显                                                     |
-| slideDistance     | Number  | 一       | 100      | 滑动手时触发距离                                                               |
-| searchPlaceholder | String  | 一       | 搜索     | 搜索框提示占位符文字                                                           |
-| defaultShowType   | String  | org/role | org      | 默认展示类型                                                                   |
-| orgText           | String  | 一       | 组织     | 切换按钮 org 文字                                                              |
-| roleText          | String  | 一       | 角色     | 切换按钮 role 文字                                                             |
-| submitText        | String  | 一       | 提交     | 提交按钮文字                                                                   |
-| cancelText        | String  | 一       | 取消     | 取消按钮文字                                                                   |
+| prop              | type    | options  | default  | description                                                                |
+| :---------------- | :------ | :------- | :------- | :------------------------------------------------------------------------- |
+| data              | Array   | 一       | []       | 渲染数据源                                                                 |
+| label             | String  | 一       | name     | 展示字段名称                                                               |
+| nodeKey           | String  | 一       | id       | 数据 key(如: id)                                                           |
+| children          | String  | 一       | children | 子节点的字段名称                                                           |
+| icon              | String  | 一       | avatar   | 头像的字段名称                                                             |
+| isShowClearBtn    | Boolean | 一       | true     | 是否显示搜索框右侧的清除按钮                                               |
+| isShowIcon        | Boolean | 一       | false    | 是否显示图标                                                               |
+| defaultIcon       | String  | 一       | 一       | 默认图标，本地图片引用：`:defaultIcon="require('@/assets/demo/icon.jpg')"` |
+| isMultiple        | Boolean | 一       | true     | 是否多选                                                                   |
+| isSelectRequired  | Boolean | 一       | true     | 是否必选                                                                   |
+| selectedList      | Array   | 一       | []       | 已经选择的数据，可用作回显                                                 |
+| slideDistance     | Number  | 一       | 100      | 滑动手时触发距离                                                           |
+| searchPlaceholder | String  | 一       | 搜索     | 搜索框提示占位符文字                                                       |
+| defaultShowType   | String  | org/role | org      | 默认展示类型                                                               |
+| orgText           | String  | 一       | 组织     | 切换按钮 org 文字                                                          |
+| roleText          | String  | 一       | 角色     | 切换按钮 role 文字                                                         |
+| submitText        | String  | 一       | 提交     | 提交按钮文字                                                               |
+| cancelText        | String  | 一       | 取消     | 取消按钮文字                                                               |
 
 ## Tree Events
 
@@ -126,7 +126,7 @@
     └── vue.config.js
    ```
 
-2. 在 `index.js` 用到该组件处引入：
+2. 在 `index.js` 中写入如下代码：
 
    ```javascript
    import MobileTreeCpt from "./MobileTree.vue";
@@ -140,13 +140,15 @@
    export default MobileTree;
    ```
 
-3. 在 `main.js` 中注册：
+3. 在 `main.js` 中进行全局注册：
 
    ```js
    import MobileTree from "./components/MobileTree";
-   
+
    Vue.use(MobileTree);
    ```
+
+4. 注册后即可在全局任意位置使用
 
 ### 启用组件
 
@@ -200,19 +202,38 @@
 > 将 `data` 绑定对应数据即可
 
 ```js
-// 需将数据转换为以下结构, name 和 id 可通过 prop 属性进行自定义
+// 需将数据转换为以下结构(以组织部分代码为例), name 和 id 可通过 prop 属性进行自定义
 [
   {
-    name: "赵启",
-    id: "8ef2eo26w5181i51qd5",
-    // ...
+    name: "研发部",
+    id: "3zs96s5ddds2c4f1re5",
+    children: [],
+    avatar: ""
   },
   {
-    name: "王刚",
-    id: "k215tg1eqwh56yil15w",
-    // ...
-  },
-  // 其他
+    name: "人事部",
+    id: "5ef2eo2qwh56yil15wa",
+    avatar: "",
+    children: [
+      {
+        name: "培训组",
+        id: "a3s5d21v4forut96521",
+        avatar: "",
+        children: [
+          {
+            name: "张晓丽",
+            id: "3a6s5d2f8d555e4r1fp",
+            avatar: ""
+          }
+        ],
+      },
+      {
+        name: "赵海",
+        id: "a8s5d4c111d4f5e2f3s",
+        avatar: ""
+      }
+    ]
+  }
 ];
 ```
 
