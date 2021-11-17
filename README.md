@@ -22,6 +22,26 @@
 <img src="https://stefan-ysh.github.io/images/instructions.jpg" />
 </div>
 
+## Functional demonstration
+
+1. 单选
+
+<div align="center">
+<img src="https://stefan-ysh.github.io/images/gif/单选.gif" />
+</div>
+
+2. 多选
+
+<div align="center">
+<img src="https://stefan-ysh.github.io/images/gif/多选.gif" />
+</div>
+
+3. 搜索
+
+<div align="center">
+<img src="https://stefan-ysh.github.io/images/gif/搜索.gif" />
+</div>
+
 ## Links
 
 - [Online Demo](http://120.78.207.151/dist/)
@@ -244,7 +264,7 @@
 
 ### 单选/多选
 
-> 通过给 isMultiple 绑定 `true` 或 `false` 来实现单选/多选
+> 通过给 `isMultiple` 绑定 `false` 或 `true 来实现单选/多选
 
 ### 提交数据
 
