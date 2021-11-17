@@ -53,17 +53,17 @@
 
 ## Tree Events
 
-| name | description | parameter |remark|
-| :------------------ | :------------------------------------- | :------------ |:---|
-| on-select | 点击选项时触发，返回当前点击的选项信息 | item |—|
-| on-submit | 提交时触发，返回所有已选项 | selectedItems |—|
-| on-cancel | 点击取消按钮时候触发，可用来关闭组件等 | — |—|
-| on-search | 搜索框输入时候触发 | searchKey |—|
-| on-expand | 点击下级时候触发 | currentNode |—|
-| on-nav | 点击面包屑导航时触发 | currentNode |返回 `-1` 时为点击全部|
-| on-clear | 点击清楚搜索框时候触发 | — |—|
-| on-slide | 滑动手势触发的事件 | — |—|
-| on-switch-show-type | 点击切换显示类型按钮触发 | showType |—|
+| name                | description                            | parameter     | remark                 |
+| :------------------ | :------------------------------------- | :------------ | :--------------------- |
+| on-select           | 点击选项时触发，返回当前点击的选项信息 | item          | —                      |
+| on-submit           | 提交时触发，返回所有已选项             | selectedItems | —                      |
+| on-cancel           | 点击取消按钮时候触发，可用来关闭组件等 | —             | —                      |
+| on-search           | 搜索框输入时候触发                     | searchKey     | —                      |
+| on-expand           | 点击下级时候触发                       | currentNode   | —                      |
+| on-nav              | 点击面包屑导航时触发                   | currentNode   | 返回 `-1` 时为点击全部 |
+| on-clear            | 点击清楚搜索框时候触发                 | —             | —                      |
+| on-slide            | 滑动手势触发的事件                     | —             | —                      |
+| on-switch-show-type | 点击切换显示类型按钮触发               | showType      | —                      |
 
 ## Tree Slots
 
@@ -76,6 +76,8 @@
 | result-area          | 底部操作区             | selectedItems |
 
 ## Usage
+
+### 手动注册
 
 1. 将下载的组件 `MobileTree.vue` 复制到项目组件目录中，如：
 
@@ -90,13 +92,13 @@
     └── vue.config.js
    ```
 
-2. 在需要用到该组件处引入
+2. 在需要用到该组件处引入：
 
    ```javascript
    import MobileTree from "@/components/MobileTree/MobileTree";
    ```
 
-3. 注册组件
+3. 注册组件：
 
    ```html
    <script>
@@ -108,50 +110,88 @@
    </script>
    ```
 
-4. 启用组件
+### `Vue` 全局注册
 
-   ```html
-   <MobileTree
-     :data="data"
-     label="name"
-     children="children"
-     icon="avatar"
-     :isMultiple="true"
-     :selectedList="selectedList"
-     @on-submit="handleSubmit"
-     @on-search="handleSearch"
-     @on-expand="handleExpand"
-     @on-nav="handleNav"
-     @on-clear="clearSearchKey"
-     @on-switch-show-type="handleSwitchShowType"
-   >
-     <!-- 此处示例插槽只做展示，非必需，如无特殊需求，不建议使用。 -->
-     <!-- 切换显示类型按钮插槽 -->
-     <template slot="switch-show-type-btn" slot-scope="scope">
-       通过 scope.showType 来获取切换的显示类型
-     </template>
+1. 在组件文件夹下创建一个 `index.js` ，如：
 
-     <!-- 内容区插槽 -->
-     <template slot="content-area" slot-scope="scope">
-       通过 scope.renderData 来获取显示区数据
-     </template>
-
-     <!-- 无数据提示信息插槽 -->
-     <template slot="empty-tips">
-       暂无数据
-     </template>
-
-     <!-- 底部已选项展示区插槽 -->
-     <template slot="selected-list" slot-scope="scope">
-       通过 scope.selectedItems 来获取已选项数据
-     </template>
-
-     <!-- 底部操作区插槽 -->
-     <template slot="result-area" slot-scope="scope">
-       通过 scope.selectedItems 来获取已选项数据
-     </template>
-   </MobileTree>
+   ```bash
+   MobileOrgTree
+    ├── src
+    │   ├── App.vue
+    │   ├── components
+    │   │   └── MobileTree
+    │   │       ├── MobileTree.vue
+    │   │       └── index.js
+    │   └── main.js
+    └── vue.config.js
    ```
+
+2. 在 `index.js` 用到该组件处引入：
+
+   ```javascript
+   import MobileTreeCpt from "./MobileTree.vue";
+
+   const MobileTree = {
+     install: function(Vue) {
+       Vue.component("MobileTree", MobileTreeCpt);
+     },
+   };
+
+   export default MobileTree;
+   ```
+
+3. 在 `main.js` 中注册：
+
+   ```js
+   import MobileTree from "./components/MobileTree";
+   
+   Vue.use(MobileTree);
+   ```
+
+### 启用组件
+
+```html
+<MobileTree
+  :data="data"
+  label="name"
+  children="children"
+  icon="avatar"
+  :isMultiple="true"
+  :selectedList="selectedList"
+  @on-submit="handleSubmit"
+  @on-search="handleSearch"
+  @on-expand="handleExpand"
+  @on-nav="handleNav"
+  @on-clear="clearSearchKey"
+  @on-switch-show-type="handleSwitchShowType"
+>
+  <!-- 此处示例插槽只做展示，非必需，如无特殊需求，不建议使用。 -->
+  <!-- 切换显示类型按钮插槽 -->
+  <template slot="switch-show-type-btn" slot-scope="scope">
+    通过 scope.showType 来获取切换的显示类型
+  </template>
+
+  <!-- 内容区插槽 -->
+  <template slot="content-area" slot-scope="scope">
+    通过 scope.renderData 来获取显示区数据
+  </template>
+
+  <!-- 无数据提示信息插槽 -->
+  <template slot="empty-tips">
+    暂无数据
+  </template>
+
+  <!-- 底部已选项展示区插槽 -->
+  <template slot="selected-list" slot-scope="scope">
+    通过 scope.selectedItems 来获取已选项数据
+  </template>
+
+  <!-- 底部操作区插槽 -->
+  <template slot="result-area" slot-scope="scope">
+    通过 scope.selectedItems 来获取已选项数据
+  </template>
+</MobileTree>
+```
 
 ## Function realization
 
