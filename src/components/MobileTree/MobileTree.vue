@@ -148,58 +148,72 @@ export default {
       type: Array,
       default: () => [],
     },
+    
     defaultIcon: {
       type: String,
       default: "",
     },
+
     label: {
       type: String,
       default: "name",
     },
+
     nodeKey: {
       type: String,
       default: "id",
     },
+
     children: {
       type: String,
       default: "children",
     },
+
     icon: {
       type: String,
       default: "avatar",
     },
+
     isShowClearBtn: {
       type: Boolean,
       default: true,
     },
+
     searchPlaceholder: {
       type: String,
       default: "搜索",
     },
+
     submitText: {
       type: String,
       default: "提交",
     },
+
     cancelText: {
       type: String,
       default: "取消",
     },
+
     isShowIcon: {
       type: Boolean,
       default: false,
     },
+
     isMultiple: {
       type: Boolean,
       default: true,
     },
+
     isSelectRequired: {
       type: Boolean,
       default: true,
     },
+
     selectedList: {
       type: Array,
       default: () => [],
     },
+
     slideDistance: {
       type: Number,
       default: 100,
@@ -210,10 +224,12 @@ export default {
       type: String,
       default: "org",
     },
+
     orgText: {
       type: String,
       default: "组织",
     },
+
     roleText: {
       type: String,
       default: "角色",
@@ -224,15 +240,20 @@ export default {
     return {
       // 当前数据
       currentData: [],
+
       // 已选择的数据集合
       selectedItems: [],
+
       // 用来渲染的数据源
       renderData: [],
+
       // 搜索关键词
       searchKey: "",
+
       // 鼠标按下时候的初始 x 坐标
       startX: "",
-      showType: "",
+
+      showType: ""
     };
   },
 
@@ -269,10 +290,12 @@ export default {
         case "org":
           this.showType = "role";
           this.currentData = [];
+          this.searchKey = ''
           break;
         case "role":
           this.showType = "org";
           this.currentData = [];
+          this.searchKey = ''
         default:
           break;
       }
