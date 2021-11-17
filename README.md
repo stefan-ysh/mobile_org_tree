@@ -53,17 +53,17 @@
 
 ## Tree Events
 
-| name                | description                            | parameter     |
-| :------------------ | :------------------------------------- | :------------ |
-| on-select           | 点击选项时触发，返回当前点击的选项信息 | item          |
-| on-submit           | 提交时触发，返回所有已选项             | selectedItems |
-| on-cancel           | 点击取消按钮时候触发，可用来关闭组件等 | —             |
-| on-search           | 搜索框输入时候触发                     | searchKey     |
-| on-expand           | 点击下级时候触发                       | currentNode   |
-| on-nav              | 点击面包屑导航时触发                   | currentNode   |
-| on-clear            | 点击清楚搜索框时候触发                 | —             |
-| on-slide            | 滑动手势触发的事件                     | —             |
-| on-switch-show-type | 点击切换显示类型按钮触发               | showType      |
+| name | description | parameter |remark|
+| :------------------ | :------------------------------------- | :------------ |:---|
+| on-select | 点击选项时触发，返回当前点击的选项信息 | item |—|
+| on-submit | 提交时触发，返回所有已选项 | selectedItems |—|
+| on-cancel | 点击取消按钮时候触发，可用来关闭组件等 | — |—|
+| on-search | 搜索框输入时候触发 | searchKey |—|
+| on-expand | 点击下级时候触发 | currentNode |—|
+| on-nav | 点击面包屑导航时触发 | currentNode |返回 `-1` 时为点击全部|
+| on-clear | 点击清楚搜索框时候触发 | — |—|
+| on-slide | 滑动手势触发的事件 | — |—|
+| on-switch-show-type | 点击切换显示类型按钮触发 | showType |—|
 
 ## Tree Slots
 
@@ -211,4 +211,4 @@
 > 3. 将获取的数据赋值给 `data`
 > 4. 接收参数为 `-1` 时，表示当前点击的为 `全部`
 
-<!-- <a href="#">回到顶部</a> -->
+<a href="#">回到顶部</a>
