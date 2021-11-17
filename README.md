@@ -24,19 +24,19 @@
 
 ## Functional demonstration
 
-1. 单选
+### 单选
 
 <div align="center">
 <img src="https://stefan-ysh.github.io/images/gif/单选.gif" />
 </div>
 
-2. 多选
+### 多选
 
 <div align="center">
 <img src="https://stefan-ysh.github.io/images/gif/多选.gif" />
 </div>
 
-3. 搜索
+### 搜索
 
 <div align="center">
 <img src="https://stefan-ysh.github.io/images/gif/搜索.gif" />
