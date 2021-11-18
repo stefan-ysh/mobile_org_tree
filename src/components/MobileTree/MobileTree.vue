@@ -348,6 +348,8 @@ export default {
         index == this.currentData.length - 1 ||
         (this.currentData.length === 0 && index == -1)
       ) {
+        this.searchKey = '';
+        this.$emit("on-nav", "-1");
         return;
       }
       // 处理导航栏数据
