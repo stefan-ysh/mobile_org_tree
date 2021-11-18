@@ -67,7 +67,7 @@
 | on-search           | 搜索框输入时候触发                     | searchKey     | —                      |
 | on-expand           | 点击下级时候触发                       | currentNode   | —                      |
 | on-nav              | 点击面包屑导航时触发                   | currentNode   | 返回 `-1` 时为点击全部 |
-| on-clear            | 点击清楚搜索框时候触发                 | —             | —                      |
+| on-clear            | 点击清除搜索框时候触发                 | —             | —                      |
 | on-slide            | 滑动手势触发的事件                     | —             | —                      |
 | on-switch-show-type | 点击切换显示类型按钮触发               | showType      | —                      |
 
