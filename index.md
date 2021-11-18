@@ -24,23 +24,9 @@
 
 ## Functional demonstration
 
-### 单选
-
-<div align="center">
-<img src="https://stefan-ysh.github.io/images/gif/单选.gif" />
-</div>
-
-### 多选
-
-<div align="center">
-<img src="https://stefan-ysh.github.io/images/gif/多选.gif" />
-</div>
-
-### 搜索
-
-<div align="center">
-<img src="https://stefan-ysh.github.io/images/gif/搜索.gif" />
-</div>
+![单选](https://stefan-ysh.github.io/images/gif/单选.gif) | ![多选](https://stefan-ysh.github.io/images/gif/多选.gif) | ![搜索](https://stefan-ysh.github.io/images/gif/搜索.gif)
+:---:|:---:|:---:
+单选|多选|搜索
 
 ## Links
 
@@ -228,7 +214,7 @@
     name: "研发部",
     id: "3zs96s5ddds2c4f1re5",
     children: [],
-    avatar: ""
+    avatar: "",
   },
   {
     name: "人事部",
@@ -243,17 +229,17 @@
           {
             name: "张晓丽",
             id: "3a6s5d2f8d555e4r1fp",
-            avatar: ""
-          }
+            avatar: "",
+          },
         ],
       },
       {
         name: "赵海",
         id: "a8s5d4c111d4f5e2f3s",
-        avatar: ""
-      }
-    ]
-  }
+        avatar: "",
+      },
+    ],
+  },
 ];
 ```
 
