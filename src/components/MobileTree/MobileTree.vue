@@ -5,13 +5,13 @@
       <!-- 搜索form -->
       <form action="javascript:return true" class="search-form">
         <!-- 搜索输入框 -->
-        <!-- 禁止输入空格 -->
-        <!-- onKeypress="javascript:if(event.keyCode == 32)event.returnValue = false;" -->
         <input
           type="search"
           :placeholder="searchPlaceholder"
           v-model="searchKey"
           @input="handleSearch"
+          @compositionstart="handleComposionstart"
+          @compositionend="handleComposionend"
         />
         <!-- 清空搜索按钮 -->
         <span
@@ -93,10 +93,16 @@
               </li>
             </slot>
           </template>
-          <!-- 无数据提示 -->
+          <!-- 无数据提示:两种：1.数据源压根儿没数据 2.搜索结果没数据 -->
           <template v-else>
             <slot name="empty-tips">
-              <li class="empty"><small>暂无数据</small></li>
+              <li class="empty">
+                <small
+                  >暂无{{
+                    searchKey ? `与 '${searchKey}' 相关` : ""
+                  }}数据</small
+                >
+              </li>
             </slot>
           </template>
         </ul>
@@ -148,7 +154,7 @@ export default {
       type: Array,
       default: () => [],
     },
-    
+
     defaultIcon: {
       type: String,
       default: "",
@@ -253,7 +259,9 @@ export default {
       // 鼠标按下时候的初始 x 坐标
       startX: "",
 
-      showType: ""
+      showType: "",
+
+      isTyping: false,
     };
   },
 
@@ -290,12 +298,12 @@ export default {
         case "org":
           this.showType = "role";
           this.currentData = [];
-          this.searchKey = ''
+          this.searchKey = "";
           break;
         case "role":
           this.showType = "org";
           this.currentData = [];
-          this.searchKey = ''
+          this.searchKey = "";
         default:
           break;
       }
@@ -348,7 +356,7 @@ export default {
         index == this.currentData.length - 1 ||
         (this.currentData.length === 0 && index == -1)
       ) {
-        this.searchKey = '';
+        this.searchKey = "";
         this.$emit("on-nav", "-1");
         return;
       }
@@ -386,15 +394,32 @@ export default {
       this.$emit("on-cancel");
     },
 
+    // 开始搜索
     handleSearch() {
+      if (this.isTyping) {
+        return;
+      }
+      console.log('search');
       this.$emit("on-search", this.searchKey.trim());
+    },
+
+    // 输入中文ing
+    handleComposionstart() {
+      this.isTyping = true;
+      console.log('input start');
+    },
+
+    // 输入中文end
+    handleComposionend() {
+      this.isTyping = false;
+      console.log('input end');
     },
 
     // 清楚搜索
     clearSearchKey() {
       this.searchKey = "";
       this.$emit("on-clear");
-    },
+    }
   },
 
   watch: {
@@ -403,7 +428,7 @@ export default {
         this.showType = newVal;
       },
       deep: true,
-      immediate: true,
+      immediate: true
     },
 
     // 监听父组件传来的值
@@ -411,9 +436,9 @@ export default {
       handler(val) {
         this.renderData = val;
       },
-      immediate: true,
-    },
-  },
+      immediate: true
+    }
+  }
 };
 </script>
 
