@@ -41,7 +41,6 @@
 </template>
 
 <script>
-
 // 模拟角色数据
 import RoleData from "./data/role.json";
 
@@ -69,12 +68,11 @@ export default {
       data: [],
 
       // 控制头像显隐的变量
-      isShowIcon: true
+      isShowIcon: true,
     };
   },
 
   methods: {
-
     // 提交
     childSubmit(selectedItems) {
       let list = [];
@@ -100,8 +98,9 @@ export default {
       let tempVal = res.filter((item) => {
         return item.name.includes(searchKey);
       });
-      if (tempVal.length) {
-        this.data = tempVal;
+      let result = this.removeDuplicates(tempVal)
+      if (result.length) {
+        this.data = result;
       } else {
         this.data = [];
       }
@@ -149,6 +148,11 @@ export default {
       } else {
         this.data = this.RoleData;
       }
+    },
+
+    removeDuplicates(arr) {
+      const res = new Map();
+      return arr.filter((arr) => !res.has(arr.id) && res.set(arr.id, 1));
     },
   },
 
