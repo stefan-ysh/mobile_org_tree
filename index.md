@@ -83,8 +83,7 @@
 
 ## Usage
 
-<details>
-<summary>手动注册</summary>
+### 手动注册
 
 1. 将下载的组件 `MobileTree.vue` 复制到项目组件目录中，如：
 
@@ -116,10 +115,8 @@
      };
    </script>
    ```
-</details>
 
-<details>
-<summary>Vue 全局注册</summary>
+### `Vue` 全局注册
 
 1. 在组件文件夹下创建一个 `index.js` ，如：
 
@@ -159,10 +156,7 @@
 
 4. 注册后即可在全局任意位置使用
 
-</details>
-
-<details>
-<summary>启用组件</summary>
+### 启用组件
 
 ```html
 <MobileTree
@@ -206,8 +200,6 @@
   </template>
 </MobileTree>
 ```
-</details>
-
 
 ## Function realization
 
