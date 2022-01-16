@@ -35,7 +35,7 @@
 <!-- - [Download](https://stefan-ysh.github.io/components/MobileTree.vue) -->
 
 [超链接名](https://raw.githubusercontent.com/stefan-ysh/mobile_org_tree_git/main/components/MobileTree.vue "超链接title")
-<a href="https://github.com/stefan-ysh/mobile_org_tree_git/main/components/MobileTree.vue" target="_blank">附件1</a>
+<a href="https://github.com/stefan-ysh/mobile_org_tree_git/main/public/components/MobileTree.vue" target="_blank">附件1</a>
 
 ## Tree Props
 
