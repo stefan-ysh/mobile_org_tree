@@ -24,7 +24,7 @@
 
 ## Functional demonstration
 
-![单选](https://raw.githubusercontent.com/stefan-ysh/mobile_org_tree_git/main/images/gif/%E5%8D%95%E9%80%89.gif) | ![多选](https://raw.githubusercontent.com/stefan-ysh/mobile_org_tree_git/main/images/gif/%E5%A4%9A%E9%80%89.gif) | ![搜索](https://raw.githubusercontent.com/stefan-ysh/mobile_org_tree_git/main/images/gif/%E6%90%9C%E7%B4%A2.gif)
+![单选](https://raw.githubusercontent.com/stefan-ysh/mobile_org_tree_git/main/public/images/gif/%E5%8D%95%E9%80%89.gif) | ![多选](https://raw.githubusercontent.com/stefan-ysh/mobile_org_tree_git/main/public/images/gif/%E5%A4%9A%E9%80%89.gif) | ![搜索](https://raw.githubusercontent.com/stefan-ysh/mobile_org_tree_git/main/public/images/gif/%E6%90%9C%E7%B4%A2.gif)
 :---:|:---:|:---:
 单选|多选|搜索
 
