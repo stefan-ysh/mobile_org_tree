@@ -32,7 +32,7 @@
 
 - [Online Demo](http://120.78.207.151/dist/)
 - [Online Docs](https://stefan-ysh.github.io/mobile_org_tree_git/)
-- [Download](https://raw.githubusercontent.com/stefan-ysh/mobile_org_tree_git/main/public/components/MobileTree.vue)
+- [Download](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/stefan-ysh/mobile_org_tree_git/blob/gh-pages/MobileTree.vue)
 
 ## Tree Props
 
