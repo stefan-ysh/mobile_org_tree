@@ -13,18 +13,18 @@
 ## Modules
 
 <div align="center">
-<img src="https://stefan-ysh.github.io/images/modules.jpg" />
+<img src="https://raw.githubusercontent.com/stefan-ysh/mobile_org_tree_git/main/public/images/modules.jpg" />
 </div>
 
 ## Instructions
 
 <div align="center">
-<img src="https://github.com/stefan-ysh/mobile_org_tree_git/public/images/instructions.jpg" />
+<img src="https://raw.githubusercontent.com/stefan-ysh/mobile_org_tree_git/main/public/images/instructions.jpg" />
 </div>
 
 ## Functional demonstration
 
-![单选](https://stefan-ysh.github.io/images/gif/单选.gif) | ![多选](https://stefan-ysh.github.io/images/gif/多选.gif) | ![搜索](https://stefan-ysh.github.io/images/gif/搜索.gif)
+![单选](https://raw.githubusercontent.com/stefan-ysh/mobile_org_tree_git/main/images/gif/%E5%8D%95%E9%80%89.gif) | ![多选](https://raw.githubusercontent.com/stefan-ysh/mobile_org_tree_git/main/images/gif/%E5%A4%9A%E9%80%89.gif) | ![搜索](https://raw.githubusercontent.com/stefan-ysh/mobile_org_tree_git/main/images/gif/%E6%90%9C%E7%B4%A2.gif)
 :---:|:---:|:---:
 单选|多选|搜索
 
