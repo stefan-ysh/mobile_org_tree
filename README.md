@@ -19,7 +19,7 @@
 ## Instructions
 
 <div align="center">
-<img src="https://stefan-ysh.github.io/images/instructions.jpg" />
+<img src="https://github.com/stefan-ysh/mobile_org_tree_git/public/images/instructions.jpg" />
 </div>
 
 ## Functional demonstration
