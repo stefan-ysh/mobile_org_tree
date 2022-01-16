@@ -32,7 +32,8 @@
 
 - [Online Demo](http://120.78.207.151/dist/)
 - [Online Docs](https://stefan-ysh.github.io/mobile_org_tree_git/)
-- [Download](https://stefan-ysh.github.io/components/MobileTree.vue)
+<!-- - [Download](https://stefan-ysh.github.io/components/MobileTree.vue) -->
+- <a href="https://stefan-ysh.github.io/components/MobileTree.vue">Download</a>
 
 ## Tree Props
 
