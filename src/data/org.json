@@ -3,7 +3,7 @@
     "id": "HR",
     "name": "人事部",
     "type": "org",
-    "avatar": "https://stefan-ysh.github.io/images/role-icon/HR.png",
+    "avatar": "https://raw.githubusercontent.com/stefan-ysh/stefan-ysh.github.io/main/images/role-icon/HR.png",
     "children": [
       {
         "id": "Hai Zhang",
@@ -20,7 +20,7 @@
       {
         "id": "RecruitmentDept",
         "name": "招聘组",
-        "avatar": "https://stefan-ysh.github.io/images/role-icon/Recruitment.png",
+        "avatar": "https://raw.githubusercontent.com/stefan-ysh/stefan-ysh.github.io/main/images/role-icon/Recruitment.png",
         "type": "org",
         "children": [
           {
@@ -34,7 +34,7 @@
       {
         "id": "Trainning",
         "name": "培训组",
-        "avatar": "https://stefan-ysh.github.io/images/role-icon/training.png",
+        "avatar": "https://raw.githubusercontent.com/stefan-ysh/stefan-ysh.github.io/main/images/role-icon/training.png",
         "type": "org",
         "children": [
           {
@@ -50,7 +50,7 @@
   {
     "id": "Finance",
     "name": "财务部",
-    "avatar": "https://stefan-ysh.github.io/images/role-icon/fiance.png",
+    "avatar": "https://raw.githubusercontent.com/stefan-ysh/stefan-ysh.github.io/main/images/role-icon/fiance.png",
     "type": "org",
     "children": [
       {
@@ -77,7 +77,7 @@
     "id": "R&D",
     "name": "研发部",
     "type": "org",
-    "avatar": "https://stefan-ysh.github.io/images/role-icon/RD.png",
+    "avatar": "https://raw.githubusercontent.com/stefan-ysh/stefan-ysh.github.io/main/images/role-icon/RD.png",
     "children": [
       {
         "id": "Shihan Liu",
@@ -94,7 +94,7 @@
       {
         "id": "Frontend",
         "name": "前端组",
-        "avatar": "https://stefan-ysh.github.io/images/role-icon/frontend.png",
+        "avatar": "https://raw.githubusercontent.com/stefan-ysh/stefan-ysh.github.io/main/images/role-icon/frontend.png",
         "type": "org",
         "children": [
           {
@@ -131,7 +131,7 @@
       },
       {
         "id": "Backend",
-        "avatar": "https://stefan-ysh.github.io/images/role-icon/backend.png",
+        "avatar": "https://raw.githubusercontent.com/stefan-ysh/stefan-ysh.github.io/main/images/role-icon/backend.png",
         "name": "后端组",
         "type": "org",
         "children": [
@@ -172,13 +172,13 @@
   {
     "id": "market",
     "name": "市场部",
-    "avatar": "https://stefan-ysh.github.io/images/role-icon/market.png",
+    "avatar": "https://raw.githubusercontent.com/stefan-ysh/stefan-ysh.github.io/main/images/role-icon/market.png",
     "type": "org",
     "children": [
       {
         "id": "NewMediaOperation",
         "name": "新媒体运营组",
-        "avatar": "https://stefan-ysh.github.io/images/role-icon/operation.png",
+        "avatar": "https://raw.githubusercontent.com/stefan-ysh/stefan-ysh.github.io/main/images/role-icon/operation.png",
         "type": "org",
         "children": [
           {
@@ -204,7 +204,7 @@
       {
         "id": "CityDocing",
         "name": "城市对接组",
-        "avatar": "https://stefan-ysh.github.io/images/role-icon/city.png",
+        "avatar": "https://raw.githubusercontent.com/stefan-ysh/stefan-ysh.github.io/main/images/role-icon/city.png",
         "type": "org",
         "children": [
           {
@@ -236,7 +236,7 @@
       {
         "id": "Planning",
         "name": "策划组",
-        "avatar": "https://stefan-ysh.github.io/images/role-icon/planning.png",
+        "avatar": "https://raw.githubusercontent.com/stefan-ysh/stefan-ysh.github.io/main/images/role-icon/planning.png",
         "type": "org",
         "children": [
           {
@@ -264,12 +264,12 @@
   {
     "id": "Design",
     "name": "设计部",
-    "avatar": "https://stefan-ysh.github.io/images/role-icon/design.png",
+    "avatar": "https://raw.githubusercontent.com/stefan-ysh/stefan-ysh.github.io/main/images/role-icon/design.png",
     "type": "org",
     "children": [
       {
         "id": "OriginalPainting",
-        "avatar": "https://stefan-ysh.github.io/images/role-icon/oribinal_painting.png",
+        "avatar": "https://raw.githubusercontent.com/stefan-ysh/stefan-ysh.github.io/main/images/role-icon/oribinal_painting.png",
         "name": "原画组",
         "type": "org",
         "children": [
@@ -315,7 +315,7 @@
       {
         "id": "5.2",
         "type": "org",
-        "avatar": "https://stefan-ysh.github.io/images/role-icon/CG.png",
+        "avatar": "https://raw.githubusercontent.com/stefan-ysh/stefan-ysh.github.io/main/images/role-icon/CG.png",
         "name": "特效组",
         "children": [
           { "id": "Hao Qian", "avatar": "https://img1.baidu.com/it/u=4044273981,2319806887&fm=26&fmt=auto", "name": "钱浩", "type": "user" },
@@ -338,7 +338,7 @@
       {
         "id": "Action",
         "name": "动作组",
-        "avatar": "https://stefan-ysh.github.io/images/role-icon/action.png",
+        "avatar": "https://raw.githubusercontent.com/stefan-ysh/stefan-ysh.github.io/main/images/role-icon/action.png",
         "type": "org",
         "children": [
           {

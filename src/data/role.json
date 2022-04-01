@@ -2,12 +2,12 @@
   {
     "name": "党员",
     "id": "party_member",
-    "avatar": "https://stefan-ysh.github.io/images/role-icon/party-flag.png",
+    "avatar": "https://raw.githubusercontent.com/stefan-ysh/stefan-ysh.github.io/main/images/role-icon/party-flag.png",
     "children": [
       {
         "name": "党龄5年以内",
         "id": "party_standing_lt_5",
-        "avatar": "https://stefan-ysh.github.io/images/role-icon/party-flag.png",
+        "avatar": "https://raw.githubusercontent.com/stefan-ysh/stefan-ysh.github.io/main/images/role-icon/party-flag.png",
         "children": [
           {
             "id": "Xiaolong Chen",
@@ -32,7 +32,7 @@
       {
         "name": "党龄5-10年",
         "id": "5_gt_party_standing_lt_10",
-        "avatar": "https://stefan-ysh.github.io/images/role-icon/party-flag.png",
+        "avatar": "https://raw.githubusercontent.com/stefan-ysh/stefan-ysh.github.io/main/images/role-icon/party-flag.png",
         "children": [
           {
             "id": "Haisheng Zhang",
@@ -50,7 +50,7 @@
       },
       {
         "name": "党龄10年以上",
-        "avatar": "https://stefan-ysh.github.io/images/role-icon/party-flag.png",
+        "avatar": "https://raw.githubusercontent.com/stefan-ysh/stefan-ysh.github.io/main/images/role-icon/party-flag.png",
         "id": "party_standing_gt_10",
         "children": [
           {
@@ -72,12 +72,12 @@
   {
     "name": "管理员",
     "id": "admin",
-    "avatar": "https://stefan-ysh.github.io/images/role-icon/admin.png",
+    "avatar": "https://raw.githubusercontent.com/stefan-ysh/stefan-ysh.github.io/main/images/role-icon/admin.png",
     "children": [
       {
         "name": "初级管理员",
         "id": "junior_admin",
-        "avatar": "https://stefan-ysh.github.io/images/role-icon/admin.png",
+        "avatar": "https://raw.githubusercontent.com/stefan-ysh/stefan-ysh.github.io/main/images/role-icon/admin.png",
         "children": [
           {
             "id": "Lili Chen",
@@ -95,7 +95,7 @@
       },
       {
         "name": "中级管理员",
-        "avatar": "https://stefan-ysh.github.io/images/role-icon/admin.png",
+        "avatar": "https://raw.githubusercontent.com/stefan-ysh/stefan-ysh.github.io/main/images/role-icon/admin.png",
         "id": "middle_level_admin",
         "children": [
           {
@@ -121,7 +121,7 @@
       {
         "name": "高级管理员",
         "id": "senior_admin",
-        "avatar": "https://stefan-ysh.github.io/images/role-icon/admin.png",
+        "avatar": "https://raw.githubusercontent.com/stefan-ysh/stefan-ysh.github.io/main/images/role-icon/admin.png",
         "children": [
           {
             "id": "Hao Qian",
@@ -159,7 +159,7 @@
   {
     "name": "实习生",
     "id": "intern",
-    "avatar": "https://stefan-ysh.github.io/images/role-icon/intern.png",
+    "avatar": "https://raw.githubusercontent.com/stefan-ysh/stefan-ysh.github.io/main/images/role-icon/intern.png",
     "children": [
       {
         "id": "Liang Wang",
@@ -178,7 +178,7 @@
   {
     "name": "工程师",
     "id": "senior_engineer",
-    "avatar": "https://stefan-ysh.github.io/images/role-icon/engineer.png",
+    "avatar": "https://raw.githubusercontent.com/stefan-ysh/stefan-ysh.github.io/main/images/role-icon/engineer.png",
     "children": [
       {
         "id": "Dali Liu",
