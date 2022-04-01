@@ -64,6 +64,9 @@
                   :checked="isChecked(item)"
                   name="check"
                   class="item-checkbox"
+                  :style="{
+                    'border-radius': checkboxStyle === 'square' ? '' : '50%',
+                  }"
                 />
                 <!-- 头像 -->
                 <img
@@ -229,6 +232,11 @@ export default {
     defaultShowType: {
       type: String,
       default: "org",
+    },
+    // 显示状态
+    checkboxStyle: {
+      type: String,
+      default: "round",
     },
 
     orgText: {
@@ -588,8 +596,6 @@ input[type="search"]::-webkit-search-cancel-button {
   height: 15px;
   background-color: #ffffff;
   border: solid 1px #dddddd;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
   font-size: 0.8rem;
   margin: 0 5px 0 0;
   padding: 0;
