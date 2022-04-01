@@ -41,7 +41,7 @@
           <!-- 切换按钮 -->
           <div class="org-tree__current__switchBtn">
             <!-- 角色 / 组织  切换 -->
-            <button @click="switchShowType">
+            <button @click="switchShowType" class="btn">
               {{ showType == "org" ? orgText : roleText }}
             </button>
           </div>
@@ -548,6 +548,14 @@ input[type="search"]::-webkit-search-cancel-button {
   color: #808080;
 }
 
+/* switch org/role button style */
+.org-tree .org-tree__current .org-tree__current__switchBtn .btn {
+  border: 1px solid #5284ea;
+  border-radius: 5px;
+  padding: 0 5px;
+  background: #fff;
+  color: #5284ea;
+}
 .org-tree .org-tree__current span:last-child::after {
   display: none;
 }
