@@ -30,9 +30,9 @@
 
 ## Links
 
-- [Online Demo](http://120.78.207.151/dist/)
-- [Online Docs](https://stefan-ysh.github.io/mobile_org_tree_git/)
-- [Download](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/stefan-ysh/mobile_org_tree_git/blob/gh-pages/MobileTree.vue)
+- [Online Demo](http://120.78.207.151/org/)
+- [Online Docs](https://stefan-ysh.github.io/mobile_org_tree/)
+<!-- - [Download](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/stefan-ysh/mobile_org_tree_git/blob/gh-pages/MobileTree.vue) -->
 
 ## Tree Props
 
