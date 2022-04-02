@@ -46,7 +46,7 @@
 | isShowClearBtn    | Boolean | 一           | true     | 是否显示搜索框右侧的清除按钮                                               |
 | isShowIcon        | Boolean | 一           | false    | 是否显示图标                                                               |
 | defaultIcon       | String  | 一           | 一       | 默认图标，本地图片引用：`:defaultIcon="require('@/assets/demo/icon.jpg')"` |
-| checkboxStyle     | String  | round/square | 'round'  | 复选框显示样式，正方形 square 或圆形 round                                 |
+| checkboxStyle     | String  | round/square | round    | 复选框显示样式，正方形 square 或圆形 round                                 |
 | isMultiple        | Boolean | 一           | true     | 是否多选                                                                   |
 | isSelectRequired  | Boolean | 一           | true     | 是否必选                                                                   |
 | selectedList      | Array   | 一           | []       | 已经选择的数据，可用作回显                                                 |
