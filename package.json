@@ -1,6 +1,6 @@
 {
   "name": "mobile_org_tree",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "scripts": {
     "dev": "vue-cli-service serve",
