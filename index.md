@@ -91,14 +91,14 @@ npm install mobile-org -S
 ## Quick Start
 
 ```javascript
-import Vue from "vue"
+import Vue from "vue";
 
 // import mobile-org component
-import MobileOrg from "mobile-org"
+import MobileOrg from "mobile-org";
 // import mobile-org style file
-import "mobile-org/mobile-org.css"
+import "mobile-org/mobile-org.css";
 
-Vue.use(MobileOrg)
+Vue.use(MobileOrg);
 ```
 
 <!-- ### 手动注册
@@ -294,4 +294,4 @@ Vue.use(MobileOrg)
 > 3. 将获取的数据赋值给 `data`
 > 4. 接收参数为 `-1` 时，表示当前点击的为 `全部`
 
-<a href="#">回到顶部</a>
+<a href="#">:rocket: Top</a>
