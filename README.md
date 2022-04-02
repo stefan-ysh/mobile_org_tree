@@ -24,39 +24,39 @@
 
 ## Functional demonstration
 
-![单选](https://raw.githubusercontent.com/stefan-ysh/mobile_org_tree_git/main/public/images/gif/%E5%8D%95%E9%80%89.gif) | ![多选](https://raw.githubusercontent.com/stefan-ysh/mobile_org_tree_git/main/public/images/gif/%E5%A4%9A%E9%80%89.gif) | ![搜索](https://raw.githubusercontent.com/stefan-ysh/mobile_org_tree_git/main/public/images/gif/%E6%90%9C%E7%B4%A2.gif)
-:---:|:---:|:---:
-单选|多选|搜索
+| ![单选](https://raw.githubusercontent.com/stefan-ysh/mobile_org_tree_git/main/public/images/gif/%E5%8D%95%E9%80%89.gif) | ![多选](https://raw.githubusercontent.com/stefan-ysh/mobile_org_tree_git/main/public/images/gif/%E5%A4%9A%E9%80%89.gif) | ![搜索](https://raw.githubusercontent.com/stefan-ysh/mobile_org_tree_git/main/public/images/gif/%E6%90%9C%E7%B4%A2.gif) |
+| :---------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------: |
+|                                                          单选                                                           |                                                          多选                                                           |                                                          搜索                                                           |
 
 ## Links
 
-- [Online Demo](http://120.78.207.151/dist/)
-- [Online Docs](https://stefan-ysh.github.io/mobile_org_tree_git/)
-- [Download](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/stefan-ysh/mobile_org_tree_git/blob/gh-pages/MobileTree.vue)
+- [Online Demo](http://120.78.207.151/org/)
+- [Online Docs](https://stefan-ysh.github.io/mobile_org_tree/)
+<!-- - [Download](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/stefan-ysh/mobile_org_tree_git/blob/gh-pages/MobileTree.vue) -->
 
 ## Tree Props
 
-| prop              | type    | options  | default  | description                                                                |
-| :---------------- | :------ | :------- | :------- | :------------------------------------------------------------------------- |
-| data              | Array   | 一       | []       | 渲染数据源                                                                 |
-| label             | String  | 一       | name     | 展示字段名称                                                               |
-| nodeKey           | String  | 一       | id       | 数据 key(如: id)                                                           |
-| children          | String  | 一       | children | 子节点的字段名称                                                           |
-| icon              | String  | 一       | avatar   | 头像的字段名称                                                             |
-| isShowClearBtn    | Boolean | 一       | true     | 是否显示搜索框右侧的清除按钮                                               |
-| isShowIcon        | Boolean | 一       | false    | 是否显示图标                                                               |
-| defaultIcon       | String  | 一       | 一       | 默认图标，本地图片引用：`:defaultIcon="require('@/assets/demo/icon.jpg')"` |
-| checkboxStyle     | String  | round/square | 'round'  | 复选框显示样式，正方形 square 或圆形 round
-| isMultiple        | Boolean | 一       | true     | 是否多选                                                                   |
-| isSelectRequired  | Boolean | 一       | true     | 是否必选                                                                   |
-| selectedList      | Array   | 一       | []       | 已经选择的数据，可用作回显                                                 |
-| slideDistance     | Number  | 一       | 100      | 滑动手时触发距离                                                           |
-| searchPlaceholder | String  | 一       | 搜索     | 搜索框提示占位符文字                                                       |
-| defaultShowType   | String  | org/role | org      | 默认展示类型                                                               |
-| orgText           | String  | 一       | 组织     | 切换按钮 org 文字                                                          |
-| roleText          | String  | 一       | 角色     | 切换按钮 role 文字                                                         |
-| submitText        | String  | 一       | 提交     | 提交按钮文字                                                               |
-| cancelText        | String  | 一       | 取消     | 取消按钮文字                                                               |
+| prop              | type    | options      | default  | description                                                                |
+| :---------------- | :------ | :----------- | :------- | :------------------------------------------------------------------------- |
+| data              | Array   | 一           | []       | 渲染数据源                                                                 |
+| label             | String  | 一           | name     | 展示字段名称                                                               |
+| nodeKey           | String  | 一           | id       | 数据 key(如: id)                                                           |
+| children          | String  | 一           | children | 子节点的字段名称                                                           |
+| icon              | String  | 一           | avatar   | 头像的字段名称                                                             |
+| isShowClearBtn    | Boolean | 一           | true     | 是否显示搜索框右侧的清除按钮                                               |
+| isShowIcon        | Boolean | 一           | false    | 是否显示图标                                                               |
+| defaultIcon       | String  | 一           | 一       | 默认图标，本地图片引用：`:defaultIcon="require('@/assets/demo/icon.jpg')"` |
+| checkboxStyle     | String  | round/square | round    | 复选框显示样式，正方形 square 或圆形 round                                 |
+| isMultiple        | Boolean | 一           | true     | 是否多选                                                                   |
+| isSelectRequired  | Boolean | 一           | true     | 是否必选                                                                   |
+| selectedList      | Array   | 一           | []       | 已经选择的数据，可用作回显                                                 |
+| slideDistance     | Number  | 一           | 100      | 滑动手时触发距离                                                           |
+| searchPlaceholder | String  | 一           | 搜索     | 搜索框提示占位符文字                                                       |
+| defaultShowType   | String  | org/role     | org      | 默认展示类型                                                               |
+| orgText           | String  | 一           | 组织     | 切换按钮 org 文字                                                          |
+| roleText          | String  | 一           | 角色     | 切换按钮 role 文字                                                         |
+| submitText        | String  | 一           | 提交     | 提交按钮文字                                                               |
+| cancelText        | String  | 一           | 取消     | 取消按钮文字                                                               |
 
 ## Tree Events
 
@@ -82,9 +82,26 @@
 | selected-list        | 已经选择项的集合展示区 | selectedItems |
 | result-area          | 底部操作区             | selectedItems |
 
-## Usage
+## Install
 
-### 手动注册
+```shell
+npm install mobile-org -S
+```
+
+## Quick Start
+
+```javascript
+import Vue from "vue";
+
+// import mobile-org component
+import MobileOrg from "mobile-org";
+// import mobile-org style file
+import "mobile-org/mobile-org.css";
+
+Vue.use(MobileOrg);
+```
+
+<!-- ### 手动注册
 
 1. 将下载的组件 `MobileTree.vue` 复制到项目组件目录中，如：
 
@@ -97,7 +114,7 @@
     │   │       └── MobileTree.vue
     │   └── main.js
     └── vue.config.js
-   ```
+````
 
 2. 在需要用到该组件处引入：
 
@@ -139,7 +156,7 @@
    import MobileTreeCpt from "./MobileTree.vue";
 
    const MobileTree = {
-     install: function(Vue) {
+     install: function (Vue) {
        Vue.component("MobileTree", MobileTreeCpt);
      },
    };
@@ -155,12 +172,12 @@
    Vue.use(MobileTree);
    ```
 
-4. 注册后即可在全局任意位置使用
+4. 注册后即可在全局任意位置使用 -->
 
-### 启用组件
+### Demo
 
 ```html
-<MobileTree
+<MobileOrg
   :data="data"
   label="name"
   children="children"
@@ -186,9 +203,7 @@
   </template>
 
   <!-- 无数据提示信息插槽 -->
-  <template slot="empty-tips">
-    暂无数据
-  </template>
+  <template slot="empty-tips"> 暂无数据 </template>
 
   <!-- 底部已选项展示区插槽 -->
   <template slot="selected-list" slot-scope="scope">
@@ -199,7 +214,7 @@
   <template slot="result-area" slot-scope="scope">
     通过 scope.selectedItems 来获取已选项数据
   </template>
-</MobileTree>
+</MobileOrg>
 ```
 
 ## Function realization
@@ -279,4 +294,4 @@
 > 3. 将获取的数据赋值给 `data`
 > 4. 接收参数为 `-1` 时，表示当前点击的为 `全部`
 
-<a href="#">回到顶部</a>
+<a href="#">:rocket: Top</a>
