@@ -1,14 +1,28 @@
 {
-  "name": "mobile_org_tree",
+  "name": "mobile_org",
   "version": "0.1.2",
   "private": true,
   "scripts": {
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "mobile-org": "vue-cli-service build --target lib ./src/components/MobileTree/index.js --dest npm-package --name mobile-org"
+    "mobile-org": "vue-cli-service build --target lib ./src/components/MobileOrg/index.js --dest npm-package --name mobile-org"
+  },
+  "author": {
+    "name": "ysh",
+    "email": "stefan_ysh@foxmail.com",
+    "url": "https://github.com/stefan-ysh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stefan-ysh/mobile_org_tree.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stefan-ysh/mobile_org_tree/issues",
+    "email": "stefan_ysh@foxmail.com"
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "mobile-org": "^1.0.2",
     "vue": "^2.6.11",
     "webpack-cli": "^4.9.1"
   },

@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <MobileTree
+    <MobileOrg
       :data="data"
       label="name"
       :isShowIcon="isShowIcon"
@@ -36,7 +36,7 @@
       <!-- <template slot="result-area" slot-scope="scope">
         {{scope.selectedItems}}
       </template> -->
-    </MobileTree>
+    </MobileOrg>
   </div>
 </template>
 

@@ -1,5 +1,5 @@
 <template>
-  <div @touchstart="gtouchstart" @touchend="gtouchend" class="mobile-org-tree">
+  <div @touchstart="gtouchstart" @touchend="gtouchend" class="mobile-org">
     <!-- 上方搜索栏 -->
     <div class="search">
       <!-- 搜索form -->
@@ -23,11 +23,11 @@
       </form>
     </div>
     <!-- 下方内容显示区 -->
-    <div class="org-tree">
+    <div class="org-content">
       <!--  面包屑导航 -->
-      <div class="org-tree__current">
+      <div class="org-content__current">
         <!-- 导航区 -->
-        <div class="org-tree__current__nav">
+        <div class="org-content__current__nav">
           <span @click="handleCurrentListClick(-1)">全部</span>
           <span
             v-for="(item, index) in currentData"
@@ -39,7 +39,7 @@
         </div>
         <slot name="switch-show-type-btn" :showType="showType">
           <!-- 切换按钮 -->
-          <div class="org-tree__current__switchBtn">
+          <div class="org-content__current__switchBtn">
             <!-- 角色 / 组织  切换 -->
             <button @click="switchShowType" class="btn">
               {{ showType == "org" ? orgText : roleText }}
@@ -48,12 +48,12 @@
         </slot>
       </div>
       <!-- 内容显示区 -->
-      <div class="org-tree__warp">
-        <ul class="org-tree__ul">
+      <div class="org-content__warp">
+        <ul class="org-content__ul">
           <template v-if="renderData.length > 0">
             <slot name="content-area" :renderData="renderData">
               <li
-                class="org-tree__item"
+                class="org-content__item"
                 v-for="item in renderData"
                 :key="item[nodeKey]"
               >
@@ -79,17 +79,14 @@
                   :src="item[icon] || defaultIcon"
                 />
                 <!--  名称显示 -->
-                <span
-                  @click="handleItemClick(item)"
-                  class="org-tree__item-text"
-                >
+                <span @click="handleItemClick(item)" class="org-content__item-text">
                   {{ item[label] }}
                 </span>
                 <!-- 下级按钮 -->
                 <span
                   v-if="item.hasOwnProperty(children)"
                   @click="handleItemChildClick(item)"
-                  class="org-tree__item-child"
+                  class="org-content__item-child"
                 >
                   >
                 </span>
@@ -110,7 +107,7 @@
           </template>
         </ul>
       </div>
-      <div class="org-tree__operation">
+      <div class="org-content__operation">
         <!-- 已选择项目 -->
         <slot name="selected-list" :selectedItems="selectedItems">
           <!--  已选择的项目列表 -->
@@ -150,7 +147,7 @@
 </template>
 <script>
 export default {
-  name: "MobileTree",
+  name: "MobileOrg",
 
   props: {
     data: {
@@ -407,27 +404,27 @@ export default {
       if (this.isTyping) {
         return;
       }
-      console.log('search');
+      console.log("search");
       this.$emit("on-search", this.searchKey.trim());
     },
 
     // 输入中文ing
     handleComposionstart() {
       this.isTyping = true;
-      console.log('input start');
+      console.log("input start");
     },
 
     // 输入中文end
     handleComposionend() {
       this.isTyping = false;
-      console.log('input end');
+      console.log("input end");
     },
 
     // 清楚搜索
     clearSearchKey() {
       this.searchKey = "";
       this.$emit("on-clear");
-    }
+    },
   },
 
   watch: {
@@ -436,7 +433,7 @@ export default {
         this.showType = newVal;
       },
       deep: true,
-      immediate: true
+      immediate: true,
     },
 
     // 监听父组件传来的值
@@ -444,27 +441,27 @@ export default {
       handler(val) {
         this.renderData = val;
       },
-      immediate: true
-    }
-  }
+      immediate: true,
+    },
+  },
 };
 </script>
 
 <style scoped>
-.mobile-org-tree {
+.mobile-org {
   position: absolute;
   inset: 10px;
   padding: 10px;
 }
 
-.mobile-org-tree .search {
+.mobile-org .search {
   display: flex;
   height: 40px;
   justify-content: space-between;
   margin-bottom: 10px;
 }
 
-.mobile-org-tree .search .search-form {
+.mobile-org .search .search-form {
   height: 100%;
   width: 100%;
   display: flex;
@@ -499,7 +496,7 @@ input[type="search"]::-webkit-search-cancel-button {
   font-weight: 600;
 }
 
-.org-tree * {
+.org-content * {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -508,7 +505,7 @@ input[type="search"]::-webkit-search-cancel-button {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.org-tree {
+.org-content {
   /* height: 100%; */
   display: flex;
   flex-direction: column;
@@ -516,7 +513,7 @@ input[type="search"]::-webkit-search-cancel-button {
   border: 1px solid #eee;
 }
 
-.org-tree .org-tree__current {
+.org-content .org-content__current {
   display: flex;
   word-break: keep-all;
   font-size: 14px;
@@ -531,12 +528,12 @@ input[type="search"]::-webkit-search-cancel-button {
   justify-content: space-between;
 }
 
-.org-tree .org-tree__current span {
+.org-content .org-content__current span {
   position: relative;
   margin-right: 10px;
 }
 
-.org-tree .org-tree__current span::after {
+.org-content .org-content__current span::after {
   display: block;
   position: absolute;
   content: "/";
@@ -544,39 +541,39 @@ input[type="search"]::-webkit-search-cancel-button {
   right: -10px;
 }
 
-.org-tree .org-tree__current span:last-child {
+.org-content .org-content__current span:last-child {
   color: #808080;
 }
 
 /* switch org/role button style */
-.org-tree .org-tree__current .org-tree__current__switchBtn .btn {
+.org-content .org-content__current .org-content__current__switchBtn .btn {
   border: 1px solid #5284ea;
   border-radius: 5px;
   padding: 0 5px;
   background: #fff;
   color: #5284ea;
 }
-.org-tree .org-tree__current span:last-child::after {
+.org-content .org-content__current span:last-child::after {
   display: none;
 }
 
-.org-tree .org-tree__warp {
+.org-content .org-content__warp {
   flex: 1;
   overflow-y: auto;
   border-top: 1px solid #eee;
 }
 
-.org-tree .org-tree__warp .empty {
+.org-content .org-content__warp .empty {
   padding: 20px 0;
   color: #999;
   text-align: center;
 }
 
-.org-tree .org-tree__warp .org-tree__ul {
+.org-content .org-content__warp .org-content__ul {
   height: calc(100vh - 16rem);
   overflow: auto;
 }
-.org-tree .org-tree__warp .org-tree__item {
+.org-content .org-content__warp .org-content__item {
   border-bottom: 1px solid #eee;
   height: 38px;
   margin: 0 10px;
@@ -586,20 +583,20 @@ input[type="search"]::-webkit-search-cancel-button {
   box-sizing: border-box;
 }
 
-.org-tree .org-tree__warp .org-tree__item:last-child {
+.org-content .org-content__warp .org-content__item:last-child {
   border: none;
 }
 
-.org-tree .org-tree__warp .org-tree__item:first-child {
+.org-content .org-content__warp .org-content__item:first-child {
   border-top: none;
 }
 
 /*复选框样式 */
-.org-tree .org-tree__warp .org-tree__item .item-checkbox:checked {
+.org-content .org-content__warp .org-content__item .item-checkbox:checked {
   background: #1673ff;
 }
 
-.org-tree .org-tree__warp .org-tree__item .item-checkbox {
+.org-content .org-content__warp .org-content__item .item-checkbox {
   width: 15px;
   height: 15px;
   background-color: #ffffff;
@@ -618,7 +615,7 @@ input[type="search"]::-webkit-search-cancel-button {
   transition: background-color ease 0.1s;
 }
 
-.org-tree .org-tree__warp .org-tree__item .avatar {
+.org-content .org-content__warp .org-content__item .avatar {
   width: 25px;
   height: 25px;
   border-radius: 50%;
@@ -626,7 +623,7 @@ input[type="search"]::-webkit-search-cancel-button {
   margin-right: 5px;
 }
 
-.org-tree .org-tree__warp .org-tree__item .item-checkbox:checked::after {
+.org-content .org-content__warp .org-content__item .item-checkbox:checked::after {
   content: "";
   top: 3px;
   left: 2px;
@@ -643,25 +640,25 @@ input[type="search"]::-webkit-search-cancel-button {
   transform: rotate(-45deg);
 }
 
-.org-tree .org-tree__warp .org-tree__item input {
+.org-content .org-content__warp .org-content__item input {
   margin-right: 5px;
 }
 
-.org-tree .org-tree__warp .org-tree__item .org-tree__item-text {
+.org-content .org-content__warp .org-content__item .org-content__item-text {
   flex: 1;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-.org-tree .org-tree__warp .org-tree__item .org-tree__item-count {
+.org-content .org-content__warp .org-content__item .org-content__item-count {
   width: 45px;
   padding-right: 5px;
   text-align: center;
   color: #999;
 }
 
-.org-tree .org-tree__warp .org-tree__item .org-tree__item-child {
+.org-content .org-content__warp .org-content__item .org-content__item-child {
   padding: 0 8px;
   width: max-content;
   color: #409eff;
@@ -671,22 +668,22 @@ input[type="search"]::-webkit-search-cancel-button {
   font-weight: 600;
 }
 
-.org-tree .org-tree__operation {
+.org-content .org-content__operation {
   position: absolute;
   bottom: 0;
   left: 10px;
   right: 10px;
 }
 
-.org-tree .org-tree__operation .result-display {
+.org-content .org-content__operation .result-display {
   display: flex;
   justify-content: space-between;
   padding: 0.5rem 0;
   border-top: 1px solid rgb(247, 236, 236);
 }
 
-.org-tree
-  .org-tree__operation
+.org-content
+  .org-content__operation
   .result-display
   .result-area__operation
   .cancel-btn {
@@ -697,8 +694,8 @@ input[type="search"]::-webkit-search-cancel-button {
   text-align: center;
 }
 
-.org-tree
-  .org-tree__operation
+.org-content
+  .org-content__operation
   .result-display
   .result-area__operation
   .submit-btn {
@@ -742,7 +739,7 @@ input[type="search"]::-webkit-search-cancel-button {
 <!-- <style lang="less" scoped> -->
 <!-- 
 <style lang="scss" scoped>
-.org-tree {
+.org-content {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -754,7 +751,7 @@ input[type="search"]::-webkit-search-cancel-button {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  .org-tree__current {
+  .org-content__current {
     font-size: 14px;
     padding: 10px 0;
     box-shadow: 0px 0px 2px 2px #eee;
@@ -776,7 +773,7 @@ input[type="search"]::-webkit-search-cancel-button {
       }
     }
   }
-  .org-tree__warp {
+  .org-content__warp {
     flex: 1;
     overflow-y: auto;
     border-top: 1px solid #eee;
@@ -785,7 +782,7 @@ input[type="search"]::-webkit-search-cancel-button {
       color: #999;
       text-align: center;
     }
-    .org-tree__item {
+    .org-content__item {
       border-bottom: 1px solid #eee;
       height: 38px;
       margin: 0 10px;
@@ -793,16 +790,16 @@ input[type="search"]::-webkit-search-cancel-button {
       align-items: center;
       padding: 8px 0;
       box-sizing: border-box;
-      .org-tree__item-text {
+      .org-content__item-text {
         flex: 1;
       }
-      .org-tree__item-count {
+      .org-content__item-count {
         width: 45px;
         padding-right: 5px;
         text-align: center;
         color: #999;
       }
-      .org-tree__item-child {
+      .org-content__item-child {
         padding: 0 8px;
         width: max-content;
         color: #409eff;
