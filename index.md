@@ -1,8 +1,8 @@
-# Mobile Org Tree
+# Mobile Org
 
 ## Introduction
 
-移动端树形数据选择方案，包括组织机构、角色以及人员等分类，支持单选、多选、关键字段自定义以及多种事件及插槽等，适用于大部分组织选人场景。
+移动端组织架构数据选择方案，包括组织机构、角色以及人员等分类，支持单选、多选、关键字段自定义以及多种事件及插槽等，适用于大部分组织选人场景。
 
 1. 支持懒加载回调，点击获取当前组织下的子组织及人员等
 2. 支持单选、多选、必选等条件限制
@@ -32,9 +32,9 @@
 
 - [Online Demo](http://120.78.207.151/org/)
 - [Online Docs](https://stefan-ysh.github.io/mobile_org_tree/)
-<!-- - [Download](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/stefan-ysh/mobile_org_tree_git/blob/gh-pages/MobileTree.vue) -->
+<!-- - [Download](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/stefan-ysh/mobile_org_tree_git/blob/gh-pages/MobileOrg.vue) -->
 
-## Tree Props
+## Attributes
 
 | prop              | type    | options      | default  | description                                                                |
 | :---------------- | :------ | :----------- | :------- | :------------------------------------------------------------------------- |
@@ -58,7 +58,7 @@
 | submitText        | String  | 一           | 提交     | 提交按钮文字                                                               |
 | cancelText        | String  | 一           | 取消     | 取消按钮文字                                                               |
 
-## Tree Events
+## Events
 
 | name                | description                            | parameter     | remark                 |
 | :------------------ | :------------------------------------- | :------------ | :--------------------- |
@@ -72,7 +72,7 @@
 | on-slide            | 滑动手势触发的事件                     | —             | —                      |
 | on-switch-show-type | 点击切换显示类型按钮触发               | showType      | —                      |
 
-## Tree Slots
+## Slots
 
 | name                 | description            | parameter     |
 | :------------------- | :--------------------- | :------------ |
@@ -103,15 +103,15 @@ Vue.use(MobileOrg);
 
 <!-- ### 手动注册
 
-1. 将下载的组件 `MobileTree.vue` 复制到项目组件目录中，如：
+1. 将下载的组件 `MobileOrg.vue` 复制到项目组件目录中，如：
 
    ```bash
-   MobileOrgTree
+   MobileOrgOrg
     ├── src
     │   ├── App.vue
     │   ├── components
-    │   │   └── MobileTree
-    │   │       └── MobileTree.vue
+    │   │   └── MobileOrg
+    │   │       └── MobileOrg.vue
     │   └── main.js
     └── vue.config.js
 ````
@@ -119,7 +119,7 @@ Vue.use(MobileOrg);
 2. 在需要用到该组件处引入：
 
    ```javascript
-   import MobileTree from "@/components/MobileTree/MobileTree";
+   import MobileOrg from "@/components/MobileOrg/MobileOrg";
    ```
 
 3. 注册组件：
@@ -128,7 +128,7 @@ Vue.use(MobileOrg);
    <script>
      export default {
        components: {
-         MobileTree,
+         MobileOrg,
        },
      };
    </script>
@@ -139,12 +139,12 @@ Vue.use(MobileOrg);
 1. 在组件文件夹下创建一个 `index.js` ，如：
 
    ```bash
-   MobileOrgTree
+   MobileOrgOrg
     ├── src
     │   ├── App.vue
     │   ├── components
-    │   │   └── MobileTree
-    │   │       ├── MobileTree.vue
+    │   │   └── MobileOrg
+    │   │       ├── MobileOrg.vue
     │   │       └── index.js
     │   └── main.js
     └── vue.config.js
@@ -153,23 +153,23 @@ Vue.use(MobileOrg);
 2. 在 `index.js` 中写入如下代码：
 
    ```javascript
-   import MobileTreeCpt from "./MobileTree.vue";
+   import MobileOrgCpt from "./MobileOrg.vue";
 
-   const MobileTree = {
+   const MobileOrg = {
      install: function (Vue) {
-       Vue.component("MobileTree", MobileTreeCpt);
+       Vue.component("MobileOrg", MobileOrgCpt);
      },
    };
 
-   export default MobileTree;
+   export default MobileOrg;
    ```
 
 3. 在 `main.js` 中进行全局注册：
 
    ```js
-   import MobileTree from "./components/MobileTree";
+   import MobileOrg from "./components/MobileOrg";
 
-   Vue.use(MobileTree);
+   Vue.use(MobileOrg);
    ```
 
 4. 注册后即可在全局任意位置使用 -->
