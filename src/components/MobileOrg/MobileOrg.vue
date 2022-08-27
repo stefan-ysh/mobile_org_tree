@@ -59,6 +59,7 @@
               >
                 <!-- 复选框 -->
                 <input
+                  v-if="selectTypes.includes(item.type)"
                   type="checkbox"
                   @click="handleItemClick(item)"
                   :checked="isChecked(item)"
@@ -79,7 +80,10 @@
                   :src="item[icon] || defaultIcon"
                 />
                 <!--  名称显示 -->
-                <span @click="handleItemClick(item)" class="org-content__item-text">
+                <span
+                  @click="handleItemClick(item)"
+                  class="org-content__item-text"
+                >
                   {{ item[label] }}
                 </span>
                 <!-- 下级按钮 -->
@@ -154,7 +158,10 @@ export default {
       type: Array,
       default: () => [],
     },
-
+    selectTypes: {
+      type: Array,
+      default: () => ["org", "role"],
+    },
     defaultIcon: {
       type: String,
       default: "",
@@ -324,6 +331,9 @@ export default {
 
     // 点击选项
     handleItemClick(row) {
+      if (!this.selectTypes.includes(row.type)) {
+        return;
+      }
       // 多选
       if (this.isMultiple) {
         const data = JSON.parse(JSON.stringify(row));
@@ -623,7 +633,10 @@ input[type="search"]::-webkit-search-cancel-button {
   margin-right: 5px;
 }
 
-.org-content .org-content__warp .org-content__item .item-checkbox:checked::after {
+.org-content
+  .org-content__warp
+  .org-content__item
+  .item-checkbox:checked::after {
   content: "";
   top: 3px;
   left: 2px;

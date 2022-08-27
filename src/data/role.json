@@ -3,10 +3,12 @@
     "name": "党员",
     "id": "party_member",
     "avatar": "https://raw.githubusercontent.com/stefan-ysh/stefan-ysh.github.io/main/images/role-icon/party-flag.png",
+    "type": "role",
     "children": [
       {
         "name": "党龄5年以内",
         "id": "party_standing_lt_5",
+        "type": "role",
         "avatar": "https://raw.githubusercontent.com/stefan-ysh/stefan-ysh.github.io/main/images/role-icon/party-flag.png",
         "children": [
           {
@@ -32,6 +34,7 @@
       {
         "name": "党龄5-10年",
         "id": "5_gt_party_standing_lt_10",
+        "type": "role",
         "avatar": "https://raw.githubusercontent.com/stefan-ysh/stefan-ysh.github.io/main/images/role-icon/party-flag.png",
         "children": [
           {
@@ -50,6 +53,7 @@
       },
       {
         "name": "党龄10年以上",
+        "type": "role",
         "avatar": "https://raw.githubusercontent.com/stefan-ysh/stefan-ysh.github.io/main/images/role-icon/party-flag.png",
         "id": "party_standing_gt_10",
         "children": [
@@ -72,11 +76,13 @@
   {
     "name": "管理员",
     "id": "admin",
+    "type": "role",
     "avatar": "https://raw.githubusercontent.com/stefan-ysh/stefan-ysh.github.io/main/images/role-icon/admin.png",
     "children": [
       {
         "name": "初级管理员",
         "id": "junior_admin",
+        "type": "role",
         "avatar": "https://raw.githubusercontent.com/stefan-ysh/stefan-ysh.github.io/main/images/role-icon/admin.png",
         "children": [
           {
@@ -95,6 +101,7 @@
       },
       {
         "name": "中级管理员",
+        "type": "role",
         "avatar": "https://raw.githubusercontent.com/stefan-ysh/stefan-ysh.github.io/main/images/role-icon/admin.png",
         "id": "middle_level_admin",
         "children": [
@@ -120,6 +127,7 @@
       },
       {
         "name": "高级管理员",
+        "type": "role",
         "id": "senior_admin",
         "avatar": "https://raw.githubusercontent.com/stefan-ysh/stefan-ysh.github.io/main/images/role-icon/admin.png",
         "children": [
@@ -159,6 +167,7 @@
   {
     "name": "实习生",
     "id": "intern",
+    "type": "role",
     "avatar": "https://raw.githubusercontent.com/stefan-ysh/stefan-ysh.github.io/main/images/role-icon/intern.png",
     "children": [
       {
@@ -178,6 +187,7 @@
   {
     "name": "工程师",
     "id": "senior_engineer",
+    "type": "role",
     "avatar": "https://raw.githubusercontent.com/stefan-ysh/stefan-ysh.github.io/main/images/role-icon/engineer.png",
     "children": [
       {

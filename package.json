@@ -1,7 +1,6 @@
 {
   "name": "mobile_org",
   "version": "0.1.2",
-  "private": true,
   "scripts": {
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
