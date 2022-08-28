@@ -4,35 +4,36 @@
 
 移动端组织架构数据选择方案，包括组织机构、角色以及人员等分类，支持单选、多选、关键字段自定义以及多种事件及插槽等，适用于大部分组织选人场景。
 
-1. 支持懒加载回调，点击获取当前组织下的子组织及人员等
-2. 支持单选、多选、必选等条件限制
-3. 支持自定义子节点、key 值、头像等字段
-4. 多事件绑定类型，实现全生命周期全监测
-5. 多部位插槽，支持默认样式以及快速实现定制化
+- 支持懒加载回调，点击获取当前组织下的子组织及人员等
+- 支持单选、多选、必选等条件限制
+- 支持自定义子节点、key 值、头像等字段
+- 支持自定义可选类型
+- 多事件绑定类型，实现全生命周期全监测
+- 多部位插槽，支持默认样式以及快速实现定制化
 
 ## Modules
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/stefan-ysh/mobile_org_tree_git/main/public/images/modules.jpg" />
+<img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a05b1cc5d40e4e38bf4c9b9f7c6f63e4~tplv-k3u1fbpfcp-watermark.image?" />
 </div>
 
 ## Instructions
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/stefan-ysh/mobile_org_tree_git/main/public/images/instructions.jpg" />
+<img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/514adc66365b4222a44d64918aba704b~tplv-k3u1fbpfcp-watermark.image?" />
 </div>
 
 ## Functional demonstration
 
-| ![单选](https://raw.githubusercontent.com/stefan-ysh/mobile_org_tree_git/main/public/images/gif/%E5%8D%95%E9%80%89.gif) | ![多选](https://raw.githubusercontent.com/stefan-ysh/mobile_org_tree_git/main/public/images/gif/%E5%A4%9A%E9%80%89.gif) | ![搜索](https://raw.githubusercontent.com/stefan-ysh/mobile_org_tree_git/main/public/images/gif/%E6%90%9C%E7%B4%A2.gif) |
-| :---------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------: |
-|                                                          单选                                                           |                                                          多选                                                           |                                                          搜索                                                           |
+| ![单选.gif](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f16e248bc15f431180c629b04f9e1b62~tplv-k3u1fbpfcp-watermark.image?) | ![多选.gif](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ebb8bc179c314d778783a1eab3d680c5~tplv-k3u1fbpfcp-watermark.image?) | ![搜索.gif](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b94683246aa547f4aeba17420c673e11~tplv-k3u1fbpfcp-watermark.image?) |
+| :------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------: |
+|                                                               单选                                                               |                                                               多选                                                               |                                                               搜索                                                               |
 
 ## Links
 
 - [Online Demo](http://120.78.207.151/org/)
-- [Online Docs](https://stefan-ysh.github.io/mobile_org_tree/)
-  <!-- - [Download](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/stefan-ysh/mobile_org_tree_git/blob/gh-pages/MobileOrg.vue) -->
+  <!-- - [Online Docs](https://stefan-ysh.github.io/mobile_org_tree/)
+- [Download](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/stefan-ysh/mobile_org_tree_git/blob/gh-pages/MobileOrg.vue) -->
 
 ## Attributes
 
@@ -48,7 +49,7 @@
 | defaultIcon       | String  | 一           | 一                      | 默认图标，本地图片引用：`:defaultIcon="require('@/assets/demo/icon.jpg')"` |
 | checkboxStyle     | String  | round/square | round                   | 复选框显示样式，正方形 square 或圆形 round                                 |
 | isMultiple        | Boolean | 一           | true                    | 是否多选                                                                   |
-| selectTypes       | Array   | 一           | ['user', 'org', 'role'] | 可选类型，user 用户，org，组织部门，role 角色                              |
+| selectTypes       | Array   | 一           | ['user', 'org', 'role'] | 可可选项，user 用户，org，组织部门，role 角色                              |
 | isSelectRequired  | Boolean | 一           | true                    | 是否必选                                                                   |
 | selectedList      | Array   | 一           | []                      | 已经选择的数据，可用作回显                                                 |
 | slideDistance     | Number  | 一           | 100                     | 滑动手时触发距离                                                           |
@@ -225,7 +226,7 @@ Vue.use(MobileOrg);
 > 将 `data` 绑定对应数据即可
 
 ```js
-// 需将数据转换为以下结构(以组织部分代码为例), name 和 id 可通过 prop 属性进行自定义, 如是角色的话 type 为 role
+// 需将数据转换为以下结构(以组织部分代码为例), name 和 id 可通过 prop 属性进行自定义
 [
   {
     name: "研发部",
@@ -301,3 +302,15 @@ Vue.use(MobileOrg);
 > 4. 接收参数为 `-1` 时，表示当前点击的为 `全部`
 
 <a href="#">:rocket: Top</a>
+
+## Publish
+
+1. `npm mobile-org`
+
+2. `cd npm-package`
+
+3. copy `README.md` to `npm-package`
+
+4. `npm login`
+
+5. `npm publish`
