@@ -1,3 +1,6 @@
+//1 引入插件copy-webpack-plugin
+const CopyWebpackPlugin = require("copy-webpack-plugin");
+const path = require("path");
 module.exports = {
     // 选项...
     /* 部署应用包的基本URL */
@@ -23,4 +26,14 @@ module.exports = {
         https: false,
         open: true //配置自动启动浏览器
     },
-}
+  configureWebpack: {
+    plugins: [
+      new CopyWebpackPlugin([
+        {
+          from: path.resolve(__dirname, "./README.md"),
+          to: path.resolve(__dirname, "./npm-package"),
+        },
+      ]),
+    ],
+  },
+};
