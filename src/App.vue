@@ -98,7 +98,7 @@ export default {
       let tempVal = res.filter((item) => {
         return item.name.includes(searchKey);
       });
-      let result = this.removeDuplicates(tempVal)
+      let result = this.removeDuplicates(tempVal);
       if (result.length) {
         this.data = result;
       } else {

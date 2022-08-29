@@ -49,7 +49,7 @@
 | defaultIcon       | String  | 一           | 一                      | 默认图标，本地图片引用：`:defaultIcon="require('@/assets/demo/icon.jpg')"` |
 | checkboxStyle     | String  | round/square | round                   | 复选框显示样式，正方形 square 或圆形 round                                 |
 | isMultiple        | Boolean | 一           | true                    | 是否多选                                                                   |
-| selectTypes       | Array   | 一           | ['user', 'org', 'role'] | 可选项，user 用户，org，组织部门，role 角色                              |
+| selectTypes       | Array   | 一           | ['user', 'org', 'role'] | 可选项，user 用户，org，组织部门，role 角色                                |
 | isSelectRequired  | Boolean | 一           | true                    | 是否必选                                                                   |
 | selectedList      | Array   | 一           | []                      | 已经选择的数据，可用作回显                                                 |
 | slideDistance     | Number  | 一           | 100                     | 滑动手时触发距离                                                           |

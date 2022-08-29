@@ -285,7 +285,12 @@
             "avatar": "https://img0.baidu.com/it/u=1790150141,4008312263&fm=26&fmt=auto",
             "type": "user"
           },
-          { "id": "Wang Liu", "name": "刘旺", "avatar": "https://img1.baidu.com/it/u=3866883146,595779627&fm=26&fmt=auto", "type": "user" },
+          {
+            "id": "Wang Liu",
+            "name": "刘旺",
+            "avatar": "https://img1.baidu.com/it/u=3866883146,595779627&fm=26&fmt=auto",
+            "type": "user"
+          },
           {
             "id": "Haisheng Zhang",
             "avatar": "https://img0.baidu.com/it/u=944623136,2452636283&fm=26&fmt=auto",
@@ -318,21 +323,36 @@
         "avatar": "https://raw.githubusercontent.com/stefan-ysh/stefan-ysh.github.io/main/images/role-icon/CG.png",
         "name": "特效组",
         "children": [
-          { "id": "Hao Qian", "avatar": "https://img1.baidu.com/it/u=4044273981,2319806887&fm=26&fmt=auto", "name": "钱浩", "type": "user" },
+          {
+            "id": "Hao Qian",
+            "avatar": "https://img1.baidu.com/it/u=4044273981,2319806887&fm=26&fmt=auto",
+            "name": "钱浩",
+            "type": "user"
+          },
           {
             "id": "Feng Zhao",
             "name": "赵峰",
             "avatar": "https://img0.baidu.com/it/u=2523681781,1676592333&fm=26&fmt=auto",
             "type": "user"
           },
-          { "id": "Yang Liu", "avatar": "https://img1.baidu.com/it/u=3545499816,4261276936&fm=26&fmt=auto", "name": "刘洋", "type": "user" },
+          {
+            "id": "Yang Liu",
+            "avatar": "https://img1.baidu.com/it/u=3545499816,4261276936&fm=26&fmt=auto",
+            "name": "刘洋",
+            "type": "user"
+          },
           {
             "id": "Yusen Xing",
             "name": "邢育森",
             "avatar": "https://img1.baidu.com/it/u=3776217302,416005728&fm=26&fmt=auto",
             "type": "user"
           },
-          { "id": "Qiu Yan", "avatar": "https://img2.baidu.com/it/u=241311204,1760699530&fm=26&fmt=auto", "name": "燕秋", "type": "user" }
+          {
+            "id": "Qiu Yan",
+            "avatar": "https://img2.baidu.com/it/u=241311204,1760699530&fm=26&fmt=auto",
+            "name": "燕秋",
+            "type": "user"
+          }
         ]
       },
       {
@@ -353,11 +373,26 @@
             "name": "周大强",
             "type": "user"
           },
-          { "id": "Wei Wu", "avatar": "https://img1.baidu.com/it/u=1041667606,3755162272&fm=26&fmt=auto", "name": "吴伟", "type": "user" },
-          { "id": "Song Chen", "avatar": "https://img0.baidu.com/it/u=2230931469,319262862&fm=26&fmt=auto", "name": "陈松", "type": "user" }
+          {
+            "id": "Wei Wu",
+            "avatar": "https://img1.baidu.com/it/u=1041667606,3755162272&fm=26&fmt=auto",
+            "name": "吴伟",
+            "type": "user"
+          },
+          {
+            "id": "Song Chen",
+            "avatar": "https://img0.baidu.com/it/u=2230931469,319262862&fm=26&fmt=auto",
+            "name": "陈松",
+            "type": "user"
+          }
         ]
       },
-      { "id": "Hai Sun", "avatar": "https://img0.baidu.com/it/u=1124563456,1129104502&fm=26&fmt=auto", "name": "孙海", "type": "user" }
+      {
+        "id": "Hai Sun",
+        "avatar": "https://img0.baidu.com/it/u=1124563456,1129104502&fm=26&fmt=auto",
+        "name": "孙海",
+        "type": "user"
+      }
     ]
   },
   {

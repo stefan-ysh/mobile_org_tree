@@ -1,8 +1,8 @@
-import MobileOrgCpt from './MobileOrg.vue'
+import MobileOrgCpt from "./MobileOrg.vue";
 
 const MobileOrg = {
-    install:function (Vue) {
-        Vue.component('MobileOrg',MobileOrgCpt)
-    }
-}
-export default MobileOrg
+  install: function(Vue) {
+    Vue.component("MobileOrg", MobileOrgCpt);
+  },
+};
+export default MobileOrg;
