@@ -303,7 +303,7 @@ Vue.use(MobileOrg);
 
 <a href="#">:rocket: Top</a>
 
-## Publish
+<!--## Publish
 
 1. `npm mobile-org`
 
@@ -313,4 +313,4 @@ Vue.use(MobileOrg);
 
 4. `npm login`
 
-5. `npm publish`
+5. `npm publish` -->
