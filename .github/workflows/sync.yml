@@ -5,9 +5,7 @@ permissions:
 
 on:
   schedule:
-    # - cron: "0 0 * * *" # every day
-    # 每天 21:27：00
-    - cron: "27 21 * * *"
+    - cron: "0 0 * * *" # every day
   push:
     branches:
       - main
