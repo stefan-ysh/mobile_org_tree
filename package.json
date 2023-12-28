@@ -20,7 +20,7 @@
     "email": "stefan_ysh@foxmail.com"
   },
   "dependencies": {
-    "core-js": "^3.6.5",
+    "core-js": "^3.34.0",
     "mobile-org": "^1.0.2",
     "vue": "^2.6.11",
     "webpack-cli": "^4.9.1"
