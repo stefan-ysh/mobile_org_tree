@@ -4,12 +4,12 @@ permissions:
   contents: write
 
 on:
-  schedule:
-    - cron: "0 0 * * *" # every day
+  # schedule:
+  #   - cron: "0 0 * * *" # every day
   push:
     branches:
       - main
-  workflow_dispatch:
+  # workflow_dispatch:
 
 jobs:
   sync_latest_from_upstream:
