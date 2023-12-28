@@ -6,9 +6,9 @@ permissions:
 on:
   schedule:
     - cron: '0 0 * * *'  # 每天 UTC 时间 21:34 执行
-  # push:
-  #   branches:
-  #     - main
+  push:
+    branches:
+      - main
   workflow_dispatch:
 
 jobs:
