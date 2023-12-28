@@ -5,10 +5,10 @@ permissions:
 
 on:
   schedule:
-    - cron: '47 22 * * *'  # 每天 UTC 时间 21:34 执行
-  push:
-    branches:
-      - main
+    - cron: '0 0 * * *'  # 每天 UTC 时间 21:34 执行
+  # push:
+  #   branches:
+  #     - main
   workflow_dispatch:
 
 jobs:
