@@ -1,4 +1,4 @@
-# Mobile Org-。
+# Mobile Org-
 
 ## Introduction 
 
