@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "mobile-org": "^1.0.2",
+    "mobile-org": "^1.1.4",
     "vue": "^2.6.11",
     "webpack-cli": "^4.9.1"
   },
