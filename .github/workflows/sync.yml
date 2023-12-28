@@ -5,7 +5,7 @@ permissions:
 
 on:
   schedule:
-    - cron: '39 21 * * *'  # 每天 UTC 时间 21:34 执行
+    - cron: '42 21 * * *'  # 每天 UTC 时间 21:34 执行
   # push:
   #   branches:
   #     - main
