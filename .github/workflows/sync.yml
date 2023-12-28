@@ -4,12 +4,14 @@ permissions:
   contents: write
 
 on:
-  # schedule:
-  #   - cron: "0 0 * * *" # every day
+  schedule:
+    # - cron: "0 0 * * *" # every day
+    # 每天 21:27：00
+    - cron: "27 21 * * *"
   push:
     branches:
       - main
-  # workflow_dispatch:
+  workflow_dispatch:
 
 jobs:
   sync_latest_from_upstream:
